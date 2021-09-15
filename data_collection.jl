@@ -198,5 +198,5 @@ Other problems with drop downs include:
 """
 
 # ╔═╡ Cell order:
-# ╠═54640fbe-86ce-42bf-89cd-6085fa2052cb
-# ╠═568ad495-ac20-40e3-9abb-220e5a0e1c78
+# ╟─54640fbe-86ce-42bf-89cd-6085fa2052cb
+# ╟─568ad495-ac20-40e3-9abb-220e5a0e1c78
