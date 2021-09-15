@@ -76,16 +76,23 @@ English is the [official language of instruction](Your lectures, tutorials, exam
 
 Some of the most pervasive standards in our daily life relate to __measurements__. 
 
-The English had a unified measuring system data back to the Magna Carta (1215 CE), but the French had no common measuring system. After the French Revolution, there was a movement to rationalize French society, including measurement, which resulted in the creation of the metric system. In 1795 the meter was [“defined as being one ten millionth of the distance between the North Pole and the Equator through Paris”](https://en.wikipedia.org/wiki/Units_of_measurement_in_France)
+The English had a unified measuring system data back to the Magna Carta (1215 CE) with constiutant components dating back to Anglo-Saxon and Roman measures. Within [English](https://en.wikipedia.org/wiki/English_units) derived measurements systems, such as [Imperial](https://en.wikipedia.org/wiki/Imperial_units) and [United States Customary Units](https://en.wikipedia.org/wiki/United_States_customary_units), unit bases varied based on application: for example, 12 for length (12 inches in a foot), 16 for volume (16 fluid ounces in a pint), and 16 ounces in a pound. But with lots of other factors joining in: 3 feet in a yard, 14 pounds in a stone,  
 
-As we are probably all aware, the metric system is based on powers of 10. There is nothing special about 10, other than that we have (usually) 10 fingers and (again usually) 10 toes. From a practical perspective, there problems with using 10 as a basis.
+The French, by contrast, had no common measuring system. After the French Revolution, there was a movement to rationalize French society (as well as to eliminate any connections to the _Ancien Régime_, including measurement, which resulted in the creation of the metric system. In 1795 the meter was [“defined as being one ten millionth of the distance between the North Pole and the Equator through Paris”](https://en.wikipedia.org/wiki/Units_of_measurement_in_France)
+
+As we are probably all aware, the metric system is based on powers of 10. There is nothing special about 10, other than that we have (usually) 10 fingers and (again usually) 10 toes. So there was a _standardization_ of our bases---no more worryiong about whether we need to be thinking in terms of 3, 4, 8, 14, 16, etc. However, from a practical perspective, there are problems with using 10 as a basis---fractions! And absent computers to do teh work for us, humans generally find fractions challenging.
 
 - Few numbers divide evenly into 10 (2 and 5) meaning that you are often having to work with difficult fractions.
 	- By contrast, 12 (as in 12 inches in a foot) is evenly divided by 2, 3, 4, and 6.
     - The Babylonians used 60 as their basis. 60 is divided evently by 2, 3, 4, 5, 6, 10, 12, 15, 20, and 30.
-- One tenth (0.1) cannot be represented exactly in a binary computer.
 
-So our metric unit of measurement is based on a love of 10 and the few of Paris as the center (or centre) of the world.
+Our move from using our fingers for arithmetic to using binary-based computers (computers that count based on powers of 2), introduces new challenges to the metric system since 10 is not a power of 2. So for example,
+
+- One tenth (0.1) cannot be represented exactly in a binary computer, resulting in various computational errors if 0.1 (and similar numbers) form the basis of the computations. 
+
+### Moral
+
+Standards are rooted in social systems, solve certain problems (imperfectly), while introducing other problems.
 
 """
 
@@ -100,6 +107,25 @@ html"""
 <tr><td>Sweden and Norway </td><td> Switzerland </td><td> Turkey </td></tr>
 <tr><td>United States of America </td><td> Venezuela </td><td>  </td></tr>
 </table>
+"""
+
+# ╔═╡ ec205f4f-c19c-4e99-9f52-f71bc5cbd0df
+md"""
+## Standards to Standards
+
+As long as relationships between standards are well defined, there is little difference between using one standard or another---the conversions between them is a simple computation.
+
+### Example: US Foot
+
+In the United States, the foot (and hence the inch) has been defined in terms of the meter since 1893. So a foot is __defined as__ 1200/3937 $(1200/3937) meters.
+
+### Example: mmHg
+
+The SI standard for pressure is the Pascal (Pa). However, in medicine blood pressure is reported in millimeters of mercury (mmHG or mm[Hg]), a unit rooted in the historical roots of  the sphygmomanometer.
+
+No worries!
+
+mmHg is __defined as__ exactly 133.322387415 Pa
 """
 
 # ╔═╡ c1a1a8f5-2a75-4eed-b4f4-97bbad2304a0
@@ -120,22 +146,26 @@ Which is likely where we get our 12 month year, with lots of complicated rules t
 	
 Our 12 month year is likely also the reason we have a 24 hour day, a division created by ancient Babylonian astronomers but not used in common life.
 	
-### Technology Limits Needs for Standards
+### Technology Determines and Limits Needs for Standards
 	
-The standard ancient technology for measuring time was the sundial. The sundial did not lead to our concept of an hour, since the shadow moves slower at mid-day than it does in the evening or the morning. Further was there a social need for small, uniform divisions of time? It is only in the move from an agrarian to an industrial society where shift work needed to be coordinated that a uniform hour started to be defined. The technology of mechanical clocks which started appearing around 1400 CE provided the technological basis for this. Minutes on mechanical clocks came around 200 years later. Seconds arrived on mechanical clocks at nearly the same time.
+The standard ancient technology for measuring time was the sundial. The sundial did not lead to our concept of a uniform hour, since the shadow moves slower at mid-day than it does in the evening or the morning. Further, there was probably little social need for small, uniform divisions of time. It was only in the move from an agrarian to an industrial society where shift work needed to be coordinated that a uniform hour started to be defined. The technology of mechanical clocks which started appearing around 1400 CE provided the technological basis for this. Minutes on mechanical clocks came around 200 years later. Seconds arrived on mechanical clocks at nearly the same time.
 	
 The classical second was the day dvided by 60x60 (there is that 60 again!). In the 1940s the second was defined as "1/86400" of a mean solar day." ([Wikipedia](https://en.wikipedia.org/wiki/Second#History_of_definition)) 
 	
-## Trains and Standards
+## Trains and time tandards
 
+	
+Prior to trains, travel was slow enough that the details of _time-zones_ were not important: it didn't matter whether Philadelphia and New York City, to use a USA example, had the same noon. However, with the speed of trains and the need for passangers to switch trains, coordinating time zones became important for the "optimum degree of order" for travellers.
 
-* Efficiently laying railroads across North America
-	+ standardized railroad gauge
-	+ Unload cargo from one train running on gauge X
-	+ Load cargo onto new train running on gauge Y
-* Coordinate train schedules: time (speed of time travel)
-	+ coordinate time zones
-	+ Before trains, travel was too slow to be concerned about differences in times
+## Are time standards settled?
+	
+Not at all! 
+	
+In the next section we will learn how seconds are now defined, but since Einstein we have known that the time experienced by two objects (e.g., you and me) is relative to the gravity the objects are experiencing as well as the relative velocity between the objects. 
+	
+How in the world would this matter? At the very least just think of how dependent we are on GPS satellites, which are experiencing a much weaker gravity than our cars.
+	
+### Reflect on
 """
 end
 
@@ -182,6 +212,8 @@ md"""
 ## How are standards created?
 
 ### There is a standard for that!
+
+Standards are created by __standards developing organizations,__ which are accredited by __national standards organizations__, which join together in __international standards organizations__ to coordinate and published standards of international value.
 
 ### SDOs
 
@@ -232,69 +264,110 @@ Organizes, publishes.
 
 # ╔═╡ 80a39d08-2a1d-428c-bfc4-b505e7050800
 md"""
+## Health Standards
 
-Digital health initiatives have generally fallen into categories: 
+Digital health initiatives have generally fallen into two categories: 
 
-1. How we represent data/information
+1. How we represent health data/information
    - SNOMED
    - LOINC
-1. How we transmit that data/information.
+1. How we transmit health data/information.
    - HL7
 
-Here we will limit ourselves to data representation.
+Here we will limit ourselves to data representation, which is the most important concept for our data to knowledge topic.
 
-### Common challenges with data representation
+### Natural language as representation
 
--  Polysemy (homograph): A single term refers to multiple concepts
+Much of human language addresses representing data in the world as well as the abstract  concepts we create to provide meaning about the data. Healthcare makes extensive use of natural language to represent and communicate data. However, natural language is a far from perfect medium for data representation. Here are some problems with natural langague:
+
+
+-  Polysemy (homograph): A single term refers to multiple concepts. The word _set_ has [430 senses listed in the Oxford English Dictionary](https://www.guinnessworldrecords.com/world-records/english-word-with-the-most-meanings)
    - Mercury could refer to a mythical being, a planet, a metal, an automobile
 -  Synonymy: Multiple terms refer to the same concept
    – AMI=Acute Myocardial Infarctus=Infarctus of the myocardium=Heart attack
    - salinity=saltiness
--  Imprecision: Lack of specificities 
+-  Imprecision: Lack of specificities. Natural speech often is elliptical relying on the knowledge of the listener to fill in the missing details. This can be problematic.
    – e.g., infarctus?
 
-These all lead to ambiguity.
+These all lead to __ambiguity__, which is not conducive to a "optimum degree of order."
+
+ 
+
+
 
 ### Standards Solution
 
-The foundational idea is referred to as the tripartite "Concept Based Representation"
+Most of the standards that we will examine here are [ontologies](https://en.wikipedia.org/wiki/Ontology_(information_science)). Ontologies model the concepts of a domain using a heirarchy of concepts. That is, concepts have "is a" and "has a" relationships. We will illustrate this later.
+
+The foundational idea is referred to as "Concept Based Representation" (CBR).
 
 ![Concept based representation](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/concept_based_representation.png?raw=true)
+
+CBR has three parts
+
+1. A unit of thought (concept)
+1. A unique identifier for that unit of thought
+1. A lexical expression (term) for that unit of thought
 
 ### A Few Principles of Successful Standards
 
 
 1. Formal definition
-   - The standard provides a formal definition of the concept.
+   - The standard provides a formal definition of the concept (unit of thought) being represented.
 1. Terminology and synonyms
-   - Provides the preferred term for the concept as well as any synonyms
+   - The standard provides the preferred term for the concept as well as any "allowed" synonyms
 1. Concept orientation
-   - Each concept has one unambiguous, non-redundant meaning
+   - The standard ensures that each concept has one unambiguous, non-redundant meaning
 1. Concept permanence
-   - Old concepts cannot be deleted
+   - Old concepts cannot be deleted from the standard.
 1. Non-semantic identifiers
-   - The ID of a concept is not a name, it is not a code that will run out of room, and it is not a place in a hierarchy.
+   - The standard provides an ID for the concept that is not a name, that is not a code that will run out of room, and that is not  simplya place in a hierarchy.
 1. Poly-hierarchy
-   - Allow for multiple parent concepts 
+   - The standard allows for a concept to have multiple parent concepts.  
 
-### Example: SNOMED-CT Representation of Lisinopril
+### Example: Lisinopril
 
-- Formal definition: SNOMED-CT does not define what lisinopril is
-- Terminology and synonyms: preferred term is "lisinopril"
-- ID: 386873009 (this is non semantic)
-- Poly-hierarchy
+We will illustrate some of these concepts using the drug _lisinopril_. We will look at lisinopril in the following standards
+
+- [SNOMED-CT](http://purl.bioontology.org/ontology/SNOMEDCT/386873009)
+- [RxNORM](http://purl.bioontology.org/ontology/RXNORM/29046)
+- [Chemical Entities of Biological Interest Ontology](http://purl.obolibrary.org/obo/CHEBI_43755)
+- [MeSH](http://purl.bioontology.org/ontology/MESH/D017706)
+
+- Australian Medicines Terminology
+- Australian PBS
+
+#### 1. Formal Definition of `lisinopril`
+
+Only MeSH and Chemical Entities provide a definition of lisinopril.
+
+- Mesh
+
+>One of the ANGIOTENSIN-CONVERTING ENZYME INHIBITORS (ACE inhibitors), orally active, that has been used in the treatment of hypertension and congestive heart failure.
+
+- Chemical Entities
+
+>C21H31N3O5
+
+#### 2. Terminology and synonyms
+
+All the standards provide a preferred name and synonyms. In the case of RxNORM synonyms are "trade names".
+
+#### 5. Non-semantic identifiers
+
+All the standards provide unique, non-semantic identifiers
+
+#### 6. Poly-hierarchy
+
+Only SNOMED-CT has a poly-hierarchy representation of lisinopril. Viewing the graph below shows that SNOMED represents lisinopril both in terms of its chemical composition (dipeptide) as well as its clinical purpose ("hypotensive agent").
+
 ![lisinopril SNOMED Visualization](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/snomed_lisinopril_viz.png?raw=true)
 
-#### Other standard representations of lisinopril
+The figure is an illustration of how ontologies can help with data analysis. We can see that lisinopril is one of many ACE inhibitors which is a kind of "Renin-angiotensin system inhibitor" which is a kind of "Hypotensive agent." Thus data could be aggregated at various levels of granualrity.
 
-- [RxNORM](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/snomed_lisinopril_viz.png?raw=true)
-   - Notable difference: Provides "Has tradename" with values Qbrelis, Zestoretic, Prinzide, Zestril, and Prinivil.
-- [Chemical Entities of Biological Interest Ontology](http://purl.obolibrary.org/obo/CHEBI_43755)
-   - Notable difference: Provides chemical structure definition
-- [MeSH](http://purl.bioontology.org/ontology/MESH/D017706)
-   - Notable difference: Provides a definition based on clinical use: "One of the ANGIOTENSIN-CONVERTING ENZYME INHIBITORS (ACE inhibitors), orally active, that has been used in the treatment of hypertension and congestive heart failure."
-- [LOINC](http://purl.bioontology.org/ontology/LNC/LP171618-4)
-   - Notable difference: Defines lisinopril-induced changes in flow cytometry measurements.
+![ACE inhibitors SNOMED](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/snomed_ace_inhibitors.png?raw=true)
+
+ measurements.
 - [Australian Medicines Terminology]()
    - An example case
    - Dose, number, and packaging specific.
@@ -395,13 +468,14 @@ uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
 # ╔═╡ Cell order:
 # ╟─c17b9560-eee8-4216-94fb-fe8db636c03c
 # ╟─fb66563a-0a13-4dad-8dd8-cc310a6011fa
-# ╟─ba54c574-1507-4528-8542-56f16e8a6bf1
+# ╠═ba54c574-1507-4528-8542-56f16e8a6bf1
 # ╟─f3088148-1cb2-4647-8a9d-71a385aee2da
-# ╟─c1a1a8f5-2a75-4eed-b4f4-97bbad2304a0
+# ╠═ec205f4f-c19c-4e99-9f52-f71bc5cbd0df
+# ╠═c1a1a8f5-2a75-4eed-b4f4-97bbad2304a0
 # ╟─c08225f3-f69e-4d80-9085-1bc771f341e7
 # ╟─a25033dc-7273-4dd3-a02a-fe3d835523d4
-# ╟─33f7db73-042b-4b3c-b3f9-e54502a977d5
-# ╟─80a39d08-2a1d-428c-bfc4-b505e7050800
+# ╠═33f7db73-042b-4b3c-b3f9-e54502a977d5
+# ╠═80a39d08-2a1d-428c-bfc4-b505e7050800
 # ╟─b286fb97-61ed-45d8-9d4c-fea506061e19
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
