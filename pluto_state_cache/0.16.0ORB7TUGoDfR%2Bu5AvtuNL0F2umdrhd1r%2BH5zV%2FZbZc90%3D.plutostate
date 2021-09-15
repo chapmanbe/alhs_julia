@@ -1,0 +1,104 @@
+å•bondsÄ¨cell_resultsÅŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959à¶queued¬±published_objectsÄßrunning¬¶outputÖ§body⁄ü<div class="markdown"><h1>Health Standards Relevant to this Project</h1>
+<h2><a href="https://www.who.int/standards/classifications/classification-of-diseases">Discharge Diagnosis Codes</a></h2>
+<blockquote>
+<p>ICD is the foundation for the identification of health trends and statistics globally, and the international standard for reporting diseases and health conditions. It is the diagnostic classification standard for all clinical and research purposes. ICD defines the universe of diseases, disorders, injuries and other related health conditions, listed in a comprehensive, hierarchical fashion.</p>
+</blockquote>
+<p>Upon discharge from a hospitalization, patients are assigned diagnostic codes by professional coders who read the discharge summary and based on the contained information assign a primary diagnosis as well as a number of associated diagnoses using ICD-10 codes.</p>
+<p>These </p>
+<p><a href="https://www2.health.vic.gov.au/hospitals-and-health-services/funding-performance-accountability/activity-based-funding/casemix-funding">Victoria case-mix funding</a></p>
+<h2>Lab Tests</h2>
+<ul>
+<li><p><a href="">LOINC</a></p>
+</li>
+</ul>
+<blockquote>
+<p>Hi Brian</p>
+</blockquote>
+<p>It was good to walk through the course today.</p>
+<p>During the conversation I had asked about data checking e.g. not relying on LOIN-C codes etc without checking them.</p>
+<p>Examples I have come across: One pathology company labelling both fasting and random glucose pathology tests results with the same code: 14749-6 This makes it challenging if you are writing code to identify people who have diabetes which rely on being able to differentiate between fasting and random test results. It also meant that our clinical support tool was not fl</p>
+<p>The other example is a large general practice data set which included an ATC code for a vaccine that had been applied to other medications at random. Relying on the codes would have resulted in a underestimation of the prescription of cardiovascular medications in general practice.</p>
+<p>The moral of the story of course is not to rely on these codes, but to triangulate it with other information.</p>
+<p>You had asked me to send through some examples ‚Äì can you please let me know what level of detail would be helpful if further information about these examples would be helpful?</p>
+<h2>Prescriptions</h2>
+<p>There are a variety of drug standards relevant to this project.</p>
+<ul>
+<li><p><a href="">PBS</a></p>
+</li>
+<li><p><a href="">Australian Medicine Names</a></p>
+</li>
+</ul>
+<h2>Data Entry Methods and Issues with Data</h2>
+<ul>
+<li><p>Drop down selection/default values</p>
+<ul>
+<li><p><a href="https://www.abc.net.au/news/2021-09-14/indigenous-vaccination-rates-in-victoria-dashed-software-error/100459000">Indigenous vaccination rates in Victoria revised downwards after software error detected</a></p>
+</li>
+</ul>
+</li>
+<li><p>Data validation &#40;range checking, format checking&#41;</p>
+</li>
+<li><p>data pulls vs manual entry &#40;out of network data?&#41;</p>
+</li>
+<li><p>Patient-provided data</p>
+<ul>
+<li><p>redunancy/data inconsistency/data entry errors</p>
+</li>
+</ul>
+</li>
+<li><p>URN</p>
+</li>
+<li><p>Free text vs coded entry</p>
+</li>
+</ul>
+</div>∞persist_js_state¬§mime©text/html≤last_run_timestampÀAÿPX2…¨rootassignee¿ßcell_idŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959πdepends_on_disabled_cells¬ßruntimeÕ™Pßerrored¬±cell_dependenciesÅŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959Ñ¥precedence_heuristicßcell_idŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959¥downstream_cells_mapÄ≤upstream_cells_mapÇß@md_strê®getindexê¥cell_execution_orderëŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959©shortpath≥standards_health.jlÆprocess_status®starting§pathŸ;/home/runner/work/alhs_julia/alhs_julia/standards_health.jl™cell_orderëŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959•nbpkgá≤installed_versionsÄ∞terminal_outputsÄßenabled√∑restart_recommended_msg¿¥restart_required_msg¿≠busy_packagesê¨instantiated√´cell_inputsÅŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959Ñßcell_idŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959∞running_disabled¬§code⁄
+◊md"""
+# Health Standards Relevant to this Project
+
+## [Discharge Diagnosis Codes](https://www.who.int/standards/classifications/classification-of-diseases)
+
+>ICD is the foundation for the identification of health trends and statistics globally, and the international standard for reporting diseases and health conditions. It is the diagnostic classification standard for all clinical and research purposes. ICD defines the universe of diseases, disorders, injuries and other related health conditions, listed in a comprehensive, hierarchical fashion.
+
+Upon discharge from a hospitalization, patients are assigned diagnostic codes by professional coders who read the discharge summary and based on the contained information assign a primary diagnosis as well as a number of associated diagnoses using ICD-10 codes.
+
+These 
+
+[Victoria case-mix funding](https://www2.health.vic.gov.au/hospitals-and-health-services/funding-performance-accountability/activity-based-funding/casemix-funding)
+
+## Lab Tests
+
+- [LOINC]()
+
+>Hi Brian
+ 
+It was good to walk through the course today.
+ 
+During the conversation I had asked about data checking e.g. not relying on LOIN-C codes etc without checking them.
+ 
+Examples I have come across:
+One pathology company labelling both fasting and random glucose pathology tests results with the same code: 14749-6 This makes it challenging if you are writing code to identify people who have diabetes which rely on being able to differentiate between fasting and random test results. It also meant that our clinical support tool was not fl
+ 
+The other example is a large general practice data set which included an ATC code for a vaccine that had been applied to other medications at random. Relying on the codes would have resulted in a underestimation of the prescription of cardiovascular medications in general practice.
+ 
+The moral of the story of course is not to rely on these codes, but to triangulate it with other information.
+ 
+You had asked me to send through some examples ‚Äì can you please let me know what level of detail would be helpful if further information about these examples would be helpful?
+
+## Prescriptions
+
+There are a variety of drug standards relevant to this project.
+
+- [PBS]()
+- [Australian Medicine Names]()
+
+## Data Entry Methods and Issues with Data 
+
+- Drop down selection/default values
+   - [Indigenous vaccination rates in Victoria revised downwards after software error detected](https://www.abc.net.au/news/2021-09-14/indigenous-vaccination-rates-in-victoria-dashed-software-error/100459000)
+- Data validation (range checking, format checking)
+- data pulls vs manual entry (out of network data?)
+- Patient-provided data
+   - redunancy/data inconsistency/data entry errors
+- URN
+- Free text vs coded entry
+"""´code_folded¬´notebook_idŸ$0ec714d8-15d0-11ec-25bd-691e48fde70a´in_temp_dir¬

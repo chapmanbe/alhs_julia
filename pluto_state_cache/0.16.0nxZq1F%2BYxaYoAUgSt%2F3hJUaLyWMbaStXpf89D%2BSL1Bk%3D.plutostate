@@ -1,0 +1,576 @@
+Œ¥bonds€¬cell_resultsŠÙ$ba54c574-1507-4528-8542-56f16e8a6bf1ˆ¦queuedÂ±published_objects€§runningÂ¦output…¤bodyÚ˜<div class="markdown"><h2>What is a standard?</h2>
+<p>Consulting the Oxford English Dictionary there are, as usual, multiple definitions for <em>standard</em>. For our purposes the most relevant definition is</p>
+<blockquote>
+<p>The authorized exemplar of a unit of measure or weight; e.g.Â a measuring rod of unit length; a vessel of unit capacity, or a mass of metal of unit weight, preserved in the custody of public officers as a permanent evidence of the legally prescribed magnitude of the unit.</p>
+</blockquote>
+<p>The International Organization for Standards &#40;ISO&#41; provides the following definition of a standard:</p>
+<blockquote>
+<p>a <strong>document,</strong> established by consensus and approved by a recognized body, that provides, for common and repeated use, rules, guidelines or characteristics for activities or their results, aimed at the achievement of the optimum degree of order in a given context. &#40;<a href="https://www.iso.org/sites/ConsumersStandards/1_standards.html#section1_1">ISO â€œWhat are standards and how do they help?â€</a>&#41;</p>
+</blockquote>
+<h3>Key Concept&#33;</h3>
+<p>The key phrase I want you to keep in mind as we discuss standards is <strong>&quot;aimed at the achievement of the optimum degree of order in a given context.&quot;</strong></p>
+<p>As you work through the various sections, think about what the <strong>context</strong> is and how standards help &#40;or could help&#41; achieve <strong>optimum degree of order</strong> in that context.</p>
+<h2>Standards Everywhere&#33;</h2>
+<p>My ability to create and your ability to consume these lesson materials are deeply rooted in standards. You do not need to know what kind of computer I&#39;m writing with and I do not need to know what kind of computer you are reading this on, because standards have been created for describing how to save and read characters on a computer. Further you do not need to know how my computer connected to the internet or how the document I created at home was transmitted from my computer to the computer&#40;s&#41; on which Canvas runs.</p>
+<p>This ease is not intrinsic to computing but has been created through careful engineering and adoption of standards. Those of you old enough to remember the incompatibility between Mac and PC documents and storage media might have an easier time appreciating this.</p>
+<p>English is the <a href="Your lectures, tutorials, exams, class discussions and other activities will be in English">official language of instruction</a> at the University of Melbourne, but unlike the computing standards described above natural languages like English are more governed by convention. While France has the <a href="https://en.wikipedia.org/wiki/Acad&#37;C3&#37;A9mie_Fran&#37;C3&#37;A7aise">AcadÃ©mie FranÃ§aise</a> to provide an official, though often still ignored, version of French, there is no equivalent in English.</p>
+<h2>Standards are Driven By Technology and Politics</h2>
+<h2>Standards Examples: Length</h2>
+<p>Some of the most pervasive standards in our daily life relate to <strong>measurements</strong>. </p>
+<p>The English had a unified measuring system data back to the Magna Carta &#40;1215 CE&#41;, but the French had no common measuring system. After the French Revolution, there was a movement to rationalize French society, including measurement, which resulted in the creation of the metric system. In 1795 the meter was <a href="https://en.wikipedia.org/wiki/Units_of_measurement_in_France">â€œdefined as being one ten millionth of the distance between the North Pole and the Equator through Parisâ€</a></p>
+<p>As we are probably all aware, the metric system is based on powers of 10. There is nothing special about 10, other than that we have &#40;usually&#41; 10 fingers and &#40;again usually&#41; 10 toes. From a practical perspective, there problems with using 10 as a basis.</p>
+<ul>
+<li><p>Few numbers divide evenly into 10 &#40;2 and 5&#41; meaning that you are often having to work with difficult fractions.</p>
+</li>
+</ul>
+<pre><code>- By contrast, 12 &#40;as in 12 inches in a foot&#41; is evenly divided by 2, 3, 4, and 6.
+- The Babylonians used 60 as their basis. 60 is divided evently by 2, 3, 4, 5, 6, 10, 12, 15, 20, and 30.</code></pre>
+<ul>
+<li><p>One tenth &#40;0.1&#41; cannot be represented exactly in a binary computer.</p>
+</li>
+</ul>
+<p>So our metric unit of measurement is based on a love of 10 and the few of Paris as the center &#40;or centre&#41; of the world.</p>
+</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØPWÿÃ~¬rootassigneeÀ§cell_idÙ$ba54c574-1507-4528-8542-56f16e8a6bf1¹depends_on_disabled_cellsÂ§runtimeÍ1§erroredÂÙ$80a39d08-2a1d-428c-bfc4-b505e7050800ˆ¦queuedÂ±published_objects€§runningÂ¦output…¤bodyÚò<div class="markdown"><p>Digital health initiatives have generally fallen into categories: </p>
+<ol>
+<li><p>How we represent data/information</p>
+<ul>
+<li><p>SNOMED</p>
+</li>
+<li><p>LOINC</p>
+</li>
+</ul>
+</li>
+<li><p>How we transmit that data/information.</p>
+<ul>
+<li><p>HL7</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>Here we will limit ourselves to data representation.</p>
+<h3>Common challenges with data representation</h3>
+<ul>
+<li><p>Polysemy &#40;homograph&#41;: A single term refers to multiple concepts</p>
+<ul>
+<li><p>Mercury could refer to a mythical being, a planet, a metal, an automobile</p>
+</li>
+</ul>
+</li>
+<li><p>Synonymy: Multiple terms refer to the same concept  â€“ AMI&#61;Acute Myocardial Infarctus&#61;Infarctus of the myocardium&#61;Heart attack</p>
+<ul>
+<li><p>salinity&#61;saltiness</p>
+</li>
+</ul>
+</li>
+<li><p>Imprecision: Lack of specificities   â€“ e.g., infarctus?</p>
+</li>
+</ul>
+<p>These all lead to ambiguity.</p>
+<h3>Standards Solution</h3>
+<p>The foundational idea is referred to as the tripartite &quot;Concept Based Representation&quot;</p>
+<p><img src="https://github.com/chapmanbe/raw-stuff/blob/main/Standards/concept_based_representation.png?raw&#61;true" alt="Concept based representation" /></p>
+<h3>A Few Principles of Successful Standards</h3>
+<ol>
+<li><p>Formal definition</p>
+<ul>
+<li><p>The standard provides a formal definition of the concept.</p>
+</li>
+</ul>
+</li>
+<li><p>Terminology and synonyms</p>
+<ul>
+<li><p>Provides the preferred term for the concept as well as any synonyms</p>
+</li>
+</ul>
+</li>
+<li><p>Concept orientation</p>
+<ul>
+<li><p>Each concept has one unambiguous, non-redundant meaning</p>
+</li>
+</ul>
+</li>
+<li><p>Concept permanence</p>
+<ul>
+<li><p>Old concepts cannot be deleted</p>
+</li>
+</ul>
+</li>
+<li><p>Non-semantic identifiers</p>
+<ul>
+<li><p>The ID of a concept is not a name, it is not a code that will run out of room, and it is not a place in a hierarchy.</p>
+</li>
+</ul>
+</li>
+<li><p>Poly-hierarchy</p>
+<ul>
+<li><p>Allow for multiple parent concepts </p>
+</li>
+</ul>
+</li>
+</ol>
+<h3>Example: SNOMED-CT Representation of Lisinopril</h3>
+<ul>
+<li><p>Formal definition: SNOMED-CT does not define what lisinopril is</p>
+</li>
+<li><p>Terminology and synonyms: preferred term is &quot;lisinopril&quot;</p>
+</li>
+<li><p>ID: 386873009 &#40;this is non semantic&#41;</p>
+</li>
+<li><p>Poly-hierarchy</p>
+</li>
+</ul>
+<p><img src="https://github.com/chapmanbe/raw-stuff/blob/main/Standards/snomed_lisinopril_viz.png?raw&#61;true" alt="lisinopril SNOMED Visualization" /></p>
+<h4>Other standard representations of lisinopril</h4>
+<ul>
+<li><p><a href="https://github.com/chapmanbe/raw-stuff/blob/main/Standards/snomed_lisinopril_viz.png?raw&#61;true">RxNORM</a></p>
+<ul>
+<li><p>Notable difference: Provides &quot;Has tradename&quot; with values Qbrelis, Zestoretic, Prinzide, Zestril, and Prinivil.</p>
+</li>
+</ul>
+</li>
+<li><p><a href="http://purl.obolibrary.org/obo/CHEBI_43755">Chemical Entities of Biological Interest Ontology</a></p>
+<ul>
+<li><p>Notable difference: Provides chemical structure definition</p>
+</li>
+</ul>
+</li>
+<li><p><a href="http://purl.bioontology.org/ontology/MESH/D017706">MeSH</a></p>
+<ul>
+<li><p>Notable difference: Provides a definition based on clinical use: &quot;One of the ANGIOTENSIN-CONVERTING ENZYME INHIBITORS &#40;ACE inhibitors&#41;, orally active, that has been used in the treatment of hypertension and congestive heart failure.&quot;</p>
+</li>
+</ul>
+</li>
+<li><p><a href="http://purl.bioontology.org/ontology/LNC/LP171618-4">LOINC</a></p>
+<ul>
+<li><p>Notable difference: Defines lisinopril-induced changes in flow cytometry measurements.</p>
+</li>
+</ul>
+</li>
+<li><p><a href="">Australian Medicines Terminology</a></p>
+<ul>
+<li><p>An example case</p>
+</li>
+<li><p>Dose, number, and packaging specific.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://github.com/chapmanbe/raw-stuff/blob/main/Standards/lisinopril_aumed1.png?raw&#61;true" alt="lisinopril AU" /></p>
+<h4>Why are there so many standards?</h4>
+<p>Recall &quot;Standards are like toothbrushes, everyone agrees that theyâ€™re a good idea but nobody wants to use anyone elseâ€™s.&quot; </p>
+<p>But also standards are developed for a particular context and are abstractions for that context. Recalling Picasso&#39;s bulls, the <em>essence</em> of lisinopril differs, depending on the context.</p>
+<h3>Australian Resources</h3>
+<p>You can browse the Australian version of SNOMED-CT as well as the Australian Medicine Terminology and other resources as CSIRO&#39;s <a href="https://ontoserver.csiro.au/shrimp">Shrimp Browser</a>.</p>
+</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØPWÿÇln¬rootassigneeÀ§cell_idÙ$80a39d08-2a1d-428c-bfc4-b505e7050800¹depends_on_disabled_cellsÂ§runtimeÎ §erroredÂÙ$c08225f3-f69e-4d80-9085-1bc771f341e7ˆ¦queuedÂ±published_objects€§runningÂ¦output…¤bodyÚŠ<div class="markdown"><h2><a href="https://physics.nist.gov/cuu/Units/current.html">Current Measurement Standards</a></h2>
+<p>In 2018 our system of measurement standards was completely redesigned based on seven fundamental physical constants.</p>
+<p><img src="https://www.nist.gov/sites/default/files/styles/960_x_960_limit/public/images/2018/10/30/17pml015_si-constants-card.jpg?itok&#61;Ecezgy_j" alt="NIST SI Constants Cards" /> NIST SI Constants Cards</p>
+<ul>
+<li><p>&quot;The meter &#40;m&#41; is defined by taking the fixed numerical value of the speed of light in vacuum c to be 299,792,458 when expressed in the unit m sâˆ’1, where the second is defined in terms of âˆ†Î½Cs.&quot;</p>
+</li>
+<li><p>&quot;The second, symbol s, is the SI unit of time. It is defined by taking the fixed numerical value of the cesium frequency Î”Î½Cs, the unperturbed ground-state hyperfine transition frequency of the cesium 133 atom, to be 9 192 631 770 when expressed in the unit Hz, which is equal to s-1.&quot;</p>
+</li>
+</ul>
+<p>Notice that there is no longer any reference to a day or a year or anything else solar or the equator, Paris or the North Pole.</p>
+</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØPWÿÅP¬rootassigneeÀ§cell_idÙ$c08225f3-f69e-4d80-9085-1bc771f341e7¹depends_on_disabled_cellsÂ§runtimeÍOL§erroredÂÙ$fb66563a-0a13-4dad-8dd8-cc310a6011faˆ¦queuedÂ±published_objects€§runningÂ¦output…¤bodyÚ<h2>Standards Predicted Brexit Decades Ago</h2>
+
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/XHuKq22yXH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<hr />
+<p><iframe src="https://www.youtube.com/embed/rvYuoWyk8iU" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></p>
+°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØPWÿ½WÉ¬rootassigneeÀ§cell_idÙ$fb66563a-0a13-4dad-8dd8-cc310a6011fa¹depends_on_disabled_cellsÂ§runtimeÎ .”­§erroredÂÙ$f3088148-1cb2-4647-8a9d-71a385aee2daˆ¦queuedÂ±published_objects€§runningÂ¦output…¤bodyÚ<p>You might find it interesting to see who did and who did not sign the original Treaty of the Meter in 1875:</p>
+<table>
+<tr><td>Argentina</td><td> Austria-Hungary</td><td>Belgium</td></tr>
+<tr><td>Brazil</td><td>Denmark</td><td>France</td></tr>
+<tr><td>Germany </td><td>Italy </td><td> Peru </td></tr>
+<tr><td>Portugal </td><td> Russia </td><td> Spain </td></tr>
+<tr><td>Sweden and Norway </td><td> Switzerland </td><td> Turkey </td></tr>
+<tr><td>United States of America </td><td> Venezuela </td><td>  </td></tr>
+</table>
+°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØPWÿÃ)¦¬rootassigneeÀ§cell_idÙ$f3088148-1cb2-4647-8a9d-71a385aee2da¹depends_on_disabled_cellsÂ§runtimeÍü§erroredÂÙ$c17b9560-eee8-4216-94fb-fe8db636c03cˆ¦queuedÂ±published_objects€§runningÂ¦output…¤bodyÚ%<div class="markdown"><h1>Introduction to Standards</h1>
+<p>Standards are at the core of health informatics. However, before diving into the standards of health domain, we are going to start by exploring how standards are an important part of our daily life.</p>
+<p>PleaseÂ  start with <a href="https://www.atlasobscura.com/articles/hidden-wonder-international-standards-organization-iso">this</a> article, which I hope will give a nice motivation to the idea of standards.Â Â </p>
+<blockquote>
+<p>Standards are like toothbrushes, everyone agrees that theyâ€™re a good idea but nobody wants to use anyone elseâ€™s. &#40;Attributed to Murtha Baca, Getty Research Institute. Pomerantz, Jeffrey. <em>Metadata</em> &#40;MIT Press Essential Knowledge series&#41; &#40;p.Â 65&#41;&#41;.</p>
+</blockquote>
+</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØPWÿ¹Ê¬rootassigneeÀ§cell_idÙ$c17b9560-eee8-4216-94fb-fe8db636c03c¹depends_on_disabled_cellsÂ§runtimeÍ8@§erroredÂÙ$a25033dc-7273-4dd3-a02a-fe3d835523d4ˆ¦queuedÂ±published_objects€§runningÂ¦output…¤bodyÚ<div class="markdown"><h2>The moral from this historical review</h2>
+<blockquote>
+<p><strong>Standardization becomes critical in a connected world.</strong> If you never come into contact with your faraway neighbors, it doesnâ€™t especially matter whether you use the same measurements, operate by the same clock, or have the same size windows in your workplace. The Industrial Revolution, however, had the effect of shrinking the worldâ€”journeys which would once have been unthinkably long could now take place in the space of weeks, or even days. And for that, there needed to be cooperation along the line.</p>
+</blockquote>
+<p>Similarly, standardization becomes important when the granularity of our interactions with the world increases.</p>
+<h2>Standardization in healthcare</h2>
+<p>Remember the purpose of standards is to achieve &quot;the optimum degree of order in a given context&quot; and that &quot;standardization becomes critical in a connected world.&quot;</p>
+<p>Our current models of healthcare delivery date from the mid-20th Century. What are some of the ways you think the connectivity and granularity has evolved to make standards more important?</p>
+<h4>Type your answers here</h4>
+<bond def="medical_connectivity"><textarea cols="80" rows="7"></textarea></bond>
+</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØPXì}¬rootassigneeÀ§cell_idÙ$a25033dc-7273-4dd3-a02a-fe3d835523d4¹depends_on_disabled_cellsÂ§runtimeÎI.Ã§erroredÂÙ$b286fb97-61ed-45d8-9d4c-fea506061e19ˆ¦queuedÂ±published_objects€§runningÂ¦output…¤body °persist_js_stateÂ¤mimeªtext/plain²last_run_timestampËAØPXÔ¦œ¬rootassigneeÀ§cell_idÙ$b286fb97-61ed-45d8-9d4c-fea506061e19¹depends_on_disabled_cellsÂ§runtimeÎ *Ô§erroredÂÙ$33f7db73-042b-4b3c-b3f9-e54502a977d5ˆ¦queuedÂ±published_objects€§runningÂ¦output…¤bodyÚÏ<div class="markdown"><h2>How are standards created?</h2>
+<h3>There is a standard for that&#33;</h3>
+<h3>SDOs</h3>
+<p>Standards are created by <strong>Standards Developing Organizations &#40;SDO&#41;</strong>. SDOs can be</p>
+<ul>
+<li><p>Business groups.</p>
+<ul>
+<li><p>Example <em>USB-DF:</em> This SDO consists of businesses that develop USB cables</p>
+</li>
+</ul>
+</li>
+<li><p>Professional organizations.</p>
+<ul>
+<li><p>Example <em>Institute of Electrical and Electroncis Engineers &#40;IEEE&#41;:</em> Professional organization developing standards for computing, communications, etc.</p>
+</li>
+</ul>
+</li>
+<li><p>Government agencies</p>
+<ul>
+<li><p>Example <a href="https://www.digitalhealth.gov.au/"><em>Australian Digital Health Agency</em></a>: Creates standards for Australian-specific needs in the digital health domain.</p>
+<ul>
+<li><p><a href="https://hl7.com.au/">HL7-FHIR Australia </a></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>National Standards Organizations &#40;NSO&#41;s</h3>
+<p>NSOs accredit SDOs within sovereign countries and thus define the rules for standards development. The NSOs are also the representatives for each country in the international standards organizations, such as ISO.</p>
+<ul>
+<li><p><a href="https://www.standards.org.au/">Standards Australia</a></p>
+</li>
+<li><p><a href="https://www.ansi.org/">THE AMERICAN NATIONAL STANDARDS INSTITUTE &#40;ANSI&#41;</a></p>
+</li>
+</ul>
+<h3>International standards organizations</h3>
+<p>Organizes, publishes.</p>
+<p><img src="https://github.com/chapmanbe/raw-stuff/blob/main/Standards/standards_bodies.png?raw&#61;true" alt="standards_bodies.png" />Â Â </p>
+<h2>Important Medical Standards</h2>
+<ul>
+<li><p>SNOMED-CT</p>
+</li>
+</ul>
+<blockquote>
+<p>Today SNOMED International remains a division of CAP and is an American National Standards Institute &#40;ANSI&#41; accredited Standards Developing Organization &#40;SDO&#41;, responsible for the continued development and maintenance of the SNOMED Clinical Terms &#40;SNOMED CT&#41; coding standard. &#40;<a href="https://digital.ahrq.gov/key-topics/snomed-ct">SNOMED</a>&#41;</p>
+</blockquote>
+<ul>
+<li><p>HL7 &#40;including HL7-FHIR&#41;</p>
+</li>
+</ul>
+<blockquote>
+<p>Founded in 1987, Health Level Seven International &#40;HL7&#41; is a not-for-profit, ANSI-accredited standards developing organization dedicated to providing a comprehensive framework and related standards for the exchange, integration, sharing and retrieval of electronic health information that supports clinical practice and the management, delivery and evaluation of health services.&quot; &#40;<a href="https://www.hl7.org/">About HL7 International</a>&#41;</p>
+</blockquote>
+<ul>
+<li><p>LOINC</p>
+</li>
+</ul>
+<blockquote>
+<p>LOINC, which stands for Logical Observation Identifiers Names and Codes, was initiated in 1994 by Clem McDonald, then an investigator at Regenstrief Institute, a non-profit medical research organization associated with Indiana University. Indianapolis-based Regenstrief organized the LOINC Committee to develop a common terminology for laboratory and clinical observations because there was a growing trend to send clinical data electronically from laboratories and other data producers to hospitals, physician&#39;s offices, and payers who use the data for clinical care and management purposes.</p>
+<p>At the timeâ€”and still todayâ€”most laboratories and clinical services use HL7 to send their results electronically from their reporting systems to their care systems. However, the tests in these messages are identified by means of their internal, idiosyncratic code values. As a result, receiving care system cannot fully &quot;understand&quot; and properly file the results they receive unless they either adopt the producer&#39;s test codes &#40;which is impossible if they receive results from multiple sources&#41;, or invest in the work to map each result producer&#39;s code system to their internal code system. &#40;<a href="https://loinc.org/about/">About LOINC</a>&#41;</p>
+</blockquote>
+</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØPWÿÅX¬rootassigneeÀ§cell_idÙ$33f7db73-042b-4b3c-b3f9-e54502a977d5¹depends_on_disabled_cellsÂ§runtimeÍÀ0§erroredÂÙ$c1a1a8f5-2a75-4eed-b4f4-97bbad2304a0ˆ¦queuedÂ±published_objects€§runningÂ¦output…¤bodyÚ=<div class="markdown"><h2>Standards Example: Time</h2>
+<p>Time is a very tricky subject.</p>
+<ul>
+<li><p>The solar year is approximately 365.2422 days</p>
+</li>
+<li><p>The lunar month is approximately 29.5306 days</p>
+</li>
+</ul>
+<p>Divide the solar year by the lunar month and you get 	12.368262073916549</p>
+<p>Which is likely where we get our 12 month year, with lots of complicated rules to try to account for the 0.368262073916549 fractional days.</p>
+<p>Our 12 month year is likely also the reason we have a 24 hour day, a division created by ancient Babylonian astronomers but not used in common life.</p>
+<h3>Technology Limits Needs for Standards</h3>
+<p>The standard ancient technology for measuring time was the sundial. The sundial did not lead to our concept of an hour, since the shadow moves slower at mid-day than it does in the evening or the morning. Further was there a social need for small, uniform divisions of time? It is only in the move from an agrarian to an industrial society where shift work needed to be coordinated that a uniform hour started to be defined. The technology of mechanical clocks which started appearing around 1400 CE provided the technological basis for this. Minutes on mechanical clocks came around 200 years later. Seconds arrived on mechanical clocks at nearly the same time.</p>
+<p>The classical second was the day dvided by 60x60 &#40;there is that 60 again&#33;&#41;. In the 1940s the second was defined as &quot;1/86400&quot; of a mean solar day.&quot; &#40;<a href="https://en.wikipedia.org/wiki/Second#History_of_definition">Wikipedia</a>&#41; </p>
+<h2>Trains and Standards</h2>
+<ul>
+<li><p>Efficiently laying railroads across North America</p>
+</li>
+</ul>
+<pre><code>&#43; standardized railroad gauge
+&#43; Unload cargo from one train running on gauge X
+&#43; Load cargo onto new train running on gauge Y</code></pre>
+<ul>
+<li><p>Coordinate train schedules: time &#40;speed of time travel&#41;</p>
+</li>
+</ul>
+<pre><code>&#43; coordinate time zones
+&#43; Before trains, travel was too slow to be concerned about differences in times</code></pre>
+</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØPXf™¬rootassigneeÀ§cell_idÙ$c1a1a8f5-2a75-4eed-b4f4-97bbad2304a0¹depends_on_disabled_cellsÂ§runtimeÎ =J¢§erroredÂ±cell_dependenciesŠÙ$ba54c574-1507-4528-8542-56f16e8a6bf1„´precedence_heuristic§cell_idÙ$ba54c574-1507-4528-8542-56f16e8a6bf1´downstream_cells_map€²upstream_cells_map‚§@md_str¨getindexÙ$80a39d08-2a1d-428c-bfc4-b505e7050800„´precedence_heuristic§cell_idÙ$80a39d08-2a1d-428c-bfc4-b505e7050800´downstream_cells_map€²upstream_cells_map‚§@md_str¨getindexÙ$c08225f3-f69e-4d80-9085-1bc771f341e7„´precedence_heuristic§cell_idÙ$c08225f3-f69e-4d80-9085-1bc771f341e7´downstream_cells_map€²upstream_cells_map‚§@md_str¨getindexÙ$fb66563a-0a13-4dad-8dd8-cc310a6011fa„´precedence_heuristic§cell_idÙ$fb66563a-0a13-4dad-8dd8-cc310a6011fa´downstream_cells_map€²upstream_cells_mapƒ¤Base®Base.Docs.HTML©@html_strÙ$f3088148-1cb2-4647-8a9d-71a385aee2da„´precedence_heuristic§cell_idÙ$f3088148-1cb2-4647-8a9d-71a385aee2da´downstream_cells_map€²upstream_cells_mapƒ¤Base®Base.Docs.HTML©@html_strÙ$c17b9560-eee8-4216-94fb-fe8db636c03c„´precedence_heuristic§cell_idÙ$c17b9560-eee8-4216-94fb-fe8db636c03c´downstream_cells_map€²upstream_cells_map‚§@md_str¨getindexÙ$a25033dc-7273-4dd3-a02a-fe3d835523d4„´precedence_heuristic§cell_idÙ$a25033dc-7273-4dd3-a02a-fe3d835523d4´downstream_cells_map´medical_connectivity²upstream_cells_mapŠ§@md_str¤Base©TextField«PlutoRunner¤Core°PlutoRunner.Bond¯Core.applicable¥@bind¨Base.get¨getindexÙ$b286fb97-61ed-45d8-9d4c-fea506061e19„´precedence_heuristic§cell_idÙ$b286fb97-61ed-45d8-9d4c-fea506061e19´downstream_cells_map§PlutoUI²upstream_cells_map€Ù$33f7db73-042b-4b3c-b3f9-e54502a977d5„´precedence_heuristic§cell_idÙ$33f7db73-042b-4b3c-b3f9-e54502a977d5´downstream_cells_map€²upstream_cells_map‚§@md_str¨getindexÙ$c1a1a8f5-2a75-4eed-b4f4-97bbad2304a0„´precedence_heuristic§cell_idÙ$c1a1a8f5-2a75-4eed-b4f4-97bbad2304a0´downstream_cells_map‚ªsolar_year«lunar_month²upstream_cells_mapƒ§@md_str¡/¨getindex´cell_execution_orderšÙ$b286fb97-61ed-45d8-9d4c-fea506061e19Ù$c17b9560-eee8-4216-94fb-fe8db636c03cÙ$fb66563a-0a13-4dad-8dd8-cc310a6011faÙ$ba54c574-1507-4528-8542-56f16e8a6bf1Ù$f3088148-1cb2-4647-8a9d-71a385aee2daÙ$c1a1a8f5-2a75-4eed-b4f4-97bbad2304a0Ù$c08225f3-f69e-4d80-9085-1bc771f341e7Ù$a25033dc-7273-4dd3-a02a-fe3d835523d4Ù$33f7db73-042b-4b3c-b3f9-e54502a977d5Ù$80a39d08-2a1d-428c-bfc4-b505e7050800©shortpath²standards_intro.jl®process_status¥ready¤pathÙ:/home/runner/work/alhs_julia/alhs_julia/standards_intro.jlªcell_orderšÙ$c17b9560-eee8-4216-94fb-fe8db636c03cÙ$fb66563a-0a13-4dad-8dd8-cc310a6011faÙ$ba54c574-1507-4528-8542-56f16e8a6bf1Ù$f3088148-1cb2-4647-8a9d-71a385aee2daÙ$c1a1a8f5-2a75-4eed-b4f4-97bbad2304a0Ù$c08225f3-f69e-4d80-9085-1bc771f341e7Ù$a25033dc-7273-4dd3-a02a-fe3d835523d4Ù$33f7db73-042b-4b3c-b3f9-e54502a977d5Ù$80a39d08-2a1d-428c-bfc4-b505e7050800Ù$b286fb97-61ed-45d8-9d4c-fea506061e19¥nbpkg‡²installed_versions§PlutoUI¥0.7.9°terminal_outputs§PlutoUIÚ	[32m[1m   Installed[22m[39m Reexport â”€â”€â”€ v1.2.2
+[32m[1m   Installed[22m[39m Suppressor â”€ v0.2.0
+[32m[1m   Installed[22m[39m PlutoUI â”€â”€â”€â”€ v0.7.9
+[32m[1m  No Changes[22m[39m to `/tmp/jl_ItRbiW/Project.toml`
+[32m[1m  No Changes[22m[39m to `/tmp/jl_ItRbiW/Manifest.toml`
+[32m[1mPrecompiling[22m[39m project...
+[32m  âœ“ [39m[90mReexport[39m
+[32m  âœ“ [39m[90mSuppressor[39m
+[32m  âœ“ [39mPlutoUI
+  3 dependencies successfully precompiled in 4 seconds (2 already precompiled)
+§enabledÃ·restart_recommended_msgÀ´restart_required_msgÀ­busy_packages¬instantiatedÃ«cell_inputsŠÙ$ba54c574-1507-4528-8542-56f16e8a6bf1„§cell_idÙ$ba54c574-1507-4528-8542-56f16e8a6bf1°running_disabledÂ¤codeÚºmd"""
+## What is a standard?
+
+
+Consulting the Oxford English Dictionary there are, as usual, multiple definitions for _standard_. For our purposes the most relevant definition is
+
+> The authorized exemplar of a unit of measure or weight; e.g.Â a measuring rod of unit length; a vessel of unit capacity, or a mass of metal of unit weight, preserved in the custody of public officers as a permanent evidence of the legally prescribed magnitude of the unit.
+
+
+The International Organization for Standards (ISO) provides the following definition of a standard:
+
+> a __document,__ established by consensus and approved by a recognized body, that provides, for common and repeated use, rules, guidelines or characteristics for activities or their results, aimed at the achievement of the optimum degree of order in a given context. ([ISO â€œWhat are standards and how do they help?â€](https://www.iso.org/sites/ConsumersStandards/1_standards.html#section1_1))
+
+
+### Key Concept!
+
+The key phrase I want you to keep in mind as we discuss standards is __"aimed at the achievement of the optimum degree of order in a given context."__
+
+As you work through the various sections, think about what the __context__ is and how standards help (or could help) achieve __optimum degree of order__ in that context.
+
+## Standards Everywhere!
+
+My ability to create and your ability to consume these lesson materials are deeply rooted in standards. You do not need to know what kind of computer I'm writing with and I do not need to know what kind of computer you are reading this on, because standards have been created for describing how to save and read characters on a computer. Further you do not need to know how my computer connected to the internet or how the document I created at home was transmitted from my computer to the computer(s) on which Canvas runs.
+
+This ease is not intrinsic to computing but has been created through careful engineering and adoption of standards. Those of you old enough to remember the incompatibility between Mac and PC documents and storage media might have an easier time appreciating this.
+
+English is the [official language of instruction](Your lectures, tutorials, exams, class discussions and other activities will be in English) at the University of Melbourne, but unlike the computing standards described above natural languages like English are more governed by convention. While France has the [AcadÃ©mie FranÃ§aise](https://en.wikipedia.org/wiki/Acad%C3%A9mie_Fran%C3%A7aise) to provide an official, though often still ignored, version of French, there is no equivalent in English.
+
+## Standards are Driven By Technology and Politics
+
+
+
+## Standards Examples: Length
+
+Some of the most pervasive standards in our daily life relate to __measurements__. 
+
+The English had a unified measuring system data back to the Magna Carta (1215 CE), but the French had no common measuring system. After the French Revolution, there was a movement to rationalize French society, including measurement, which resulted in the creation of the metric system. In 1795 the meter was [â€œdefined as being one ten millionth of the distance between the North Pole and the Equator through Parisâ€](https://en.wikipedia.org/wiki/Units_of_measurement_in_France)
+
+As we are probably all aware, the metric system is based on powers of 10. There is nothing special about 10, other than that we have (usually) 10 fingers and (again usually) 10 toes. From a practical perspective, there problems with using 10 as a basis.
+
+- Few numbers divide evenly into 10 (2 and 5) meaning that you are often having to work with difficult fractions.
+	- By contrast, 12 (as in 12 inches in a foot) is evenly divided by 2, 3, 4, and 6.
+    - The Babylonians used 60 as their basis. 60 is divided evently by 2, 3, 4, 5, 6, 10, 12, 15, 20, and 30.
+- One tenth (0.1) cannot be represented exactly in a binary computer.
+
+So our metric unit of measurement is based on a love of 10 and the few of Paris as the center (or centre) of the world.
+
+"""«code_foldedÃÙ$80a39d08-2a1d-428c-bfc4-b505e7050800„§cell_idÙ$80a39d08-2a1d-428c-bfc4-b505e7050800°running_disabledÂ¤codeÚámd"""
+
+Digital health initiatives have generally fallen into categories: 
+
+1. How we represent data/information
+   - SNOMED
+   - LOINC
+1. How we transmit that data/information.
+   - HL7
+
+Here we will limit ourselves to data representation.
+
+### Common challenges with data representation
+
+-  Polysemy (homograph): A single term refers to multiple concepts
+   - Mercury could refer to a mythical being, a planet, a metal, an automobile
+-  Synonymy: Multiple terms refer to the same concept
+   â€“ AMI=Acute Myocardial Infarctus=Infarctus of the myocardium=Heart attack
+   - salinity=saltiness
+-  Imprecision: Lack of specificities 
+   â€“ e.g., infarctus?
+
+These all lead to ambiguity.
+
+### Standards Solution
+
+The foundational idea is referred to as the tripartite "Concept Based Representation"
+
+![Concept based representation](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/concept_based_representation.png?raw=true)
+
+### A Few Principles of Successful Standards
+
+
+1. Formal definition
+   - The standard provides a formal definition of the concept.
+1. Terminology and synonyms
+   - Provides the preferred term for the concept as well as any synonyms
+1. Concept orientation
+   - Each concept has one unambiguous, non-redundant meaning
+1. Concept permanence
+   - Old concepts cannot be deleted
+1. Non-semantic identifiers
+   - The ID of a concept is not a name, it is not a code that will run out of room, and it is not a place in a hierarchy.
+1. Poly-hierarchy
+   - Allow for multiple parent concepts 
+
+### Example: SNOMED-CT Representation of Lisinopril
+
+- Formal definition: SNOMED-CT does not define what lisinopril is
+- Terminology and synonyms: preferred term is "lisinopril"
+- ID: 386873009 (this is non semantic)
+- Poly-hierarchy
+![lisinopril SNOMED Visualization](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/snomed_lisinopril_viz.png?raw=true)
+
+#### Other standard representations of lisinopril
+
+- [RxNORM](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/snomed_lisinopril_viz.png?raw=true)
+   - Notable difference: Provides "Has tradename" with values Qbrelis, Zestoretic, Prinzide, Zestril, and Prinivil.
+- [Chemical Entities of Biological Interest Ontology](http://purl.obolibrary.org/obo/CHEBI_43755)
+   - Notable difference: Provides chemical structure definition
+- [MeSH](http://purl.bioontology.org/ontology/MESH/D017706)
+   - Notable difference: Provides a definition based on clinical use: "One of the ANGIOTENSIN-CONVERTING ENZYME INHIBITORS (ACE inhibitors), orally active, that has been used in the treatment of hypertension and congestive heart failure."
+- [LOINC](http://purl.bioontology.org/ontology/LNC/LP171618-4)
+   - Notable difference: Defines lisinopril-induced changes in flow cytometry measurements.
+- [Australian Medicines Terminology]()
+   - An example case
+   - Dose, number, and packaging specific.
+
+![lisinopril AU](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/lisinopril_aumed1.png?raw=true)
+
+#### Why are there so many standards?
+
+Recall "Standards are like toothbrushes, everyone agrees that theyâ€™re a good idea but nobody wants to use anyone elseâ€™s." 
+
+But also standards are developed for a particular context and are abstractions for that context. Recalling Picasso's bulls, the _essence_ of lisinopril differs, depending on the context.
+
+### Australian Resources
+
+You can browse the Australian version of SNOMED-CT as well as the Australian Medicine Terminology and other resources as CSIRO's [Shrimp Browser](https://ontoserver.csiro.au/shrimp).
+
+
+
+"""«code_foldedÃÙ$c08225f3-f69e-4d80-9085-1bc771f341e7„§cell_idÙ$c08225f3-f69e-4d80-9085-1bc771f341e7°running_disabledÂ¤codeÚşmd"""
+## [Current Measurement Standards](https://physics.nist.gov/cuu/Units/current.html)
+
+In 2018 our system of measurement standards was completely redesigned based on seven fundamental physical constants.
+
+
+![NIST SI Constants Cards](https://www.nist.gov/sites/default/files/styles/960_x_960_limit/public/images/2018/10/30/17pml015_si-constants-card.jpg?itok=Ecezgy_j)
+NIST SI Constants Cards
+
+- "The meter (m) is defined by taking the fixed numerical value of the speed of light in vacuum c to be 299,792,458 when expressed in the unit m sâˆ’1, where the second is defined in terms of âˆ†Î½Cs."
+- "The second, symbol s, is the SI unit of time. It is defined by taking the fixed numerical value of the cesium frequency Î”Î½Cs, the unperturbed ground-state hyperfine transition frequency of the cesium 133 atom, to be 9 192 631 770 when expressed in the unit Hz, which is equal to s-1."
+
+Notice that there is no longer any reference to a day or a year or anything else solar or the equator, Paris or the North Pole.
+
+"""«code_foldedÃÙ$fb66563a-0a13-4dad-8dd8-cc310a6011fa„§cell_idÙ$fb66563a-0a13-4dad-8dd8-cc310a6011fa°running_disabledÂ¤codeÚ'html"""<h2>Standards Predicted Brexit Decades Ago</h2>
+
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/XHuKq22yXH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<hr />
+<p><iframe src="https://www.youtube.com/embed/rvYuoWyk8iU" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></p>
+"""«code_foldedÃÙ$f3088148-1cb2-4647-8a9d-71a385aee2da„§cell_idÙ$f3088148-1cb2-4647-8a9d-71a385aee2da°running_disabledÂ¤codeÚhtml"""
+<p>You might find it interesting to see who did and who did not sign the original Treaty of the Meter in 1875:</p>
+<table>
+<tr><td>Argentina</td><td> Austria-Hungary</td><td>Belgium</td></tr>
+<tr><td>Brazil</td><td>Denmark</td><td>France</td></tr>
+<tr><td>Germany </td><td>Italy </td><td> Peru </td></tr>
+<tr><td>Portugal </td><td> Russia </td><td> Spain </td></tr>
+<tr><td>Sweden and Norway </td><td> Switzerland </td><td> Turkey </td></tr>
+<tr><td>United States of America </td><td> Venezuela </td><td>  </td></tr>
+</table>
+"""«code_foldedÃÙ$c17b9560-eee8-4216-94fb-fe8db636c03c„§cell_idÙ$c17b9560-eee8-4216-94fb-fe8db636c03c°running_disabledÂ¤codeÚºmd"""
+
+# Introduction to Standards
+
+Standards are at the core of health informatics. However, before diving into the standards of health domain, we are going to start by exploring how standards are an important part of our daily life.
+
+PleaseÂ  start with [this](https://www.atlasobscura.com/articles/hidden-wonder-international-standards-organization-iso) article, which I hope will give a nice motivation to the idea of standards.Â Â 
+
+
+
+> Standards are like toothbrushes, everyone agrees that theyâ€™re a good idea but nobody wants to use anyone elseâ€™s. (Attributed to Murtha Baca, Getty Research Institute. Pomerantz, Jeffrey. *Metadata* (MIT Press Essential Knowledge series) (p.Â 65)).
+
+"""«code_foldedÃÙ$a25033dc-7273-4dd3-a02a-fe3d835523d4„§cell_idÙ$a25033dc-7273-4dd3-a02a-fe3d835523d4°running_disabledÂ¤codeÚzmd"""
+## The moral from this historical review
+
+> __Standardization becomes critical in a connected world.__ If you never come into contact with your faraway neighbors, it doesnâ€™t especially matter whether you use the same measurements, operate by the same clock, or have the same size windows in your workplace. The Industrial Revolution, however, had the effect of shrinking the worldâ€”journeys which would once have been unthinkably long could now take place in the space of weeks, or even days. And for that, there needed to be cooperation along the line.
+
+Similarly, standardization becomes important when the granularity of our interactions with the world increases.
+
+## Standardization in healthcare
+
+Remember the purpose of standards is to achieve "the optimum degree of order in a given context" and that "standardization becomes critical in a connected world."
+
+
+Our current models of healthcare delivery date from the mid-20th Century. What are some of the ways you think the connectivity and granularity has evolved to make standards more important?
+
+
+#### Type your answers here
+$(@bind medical_connectivity TextField((80,7)))
+"""«code_foldedÃÙ$b286fb97-61ed-45d8-9d4c-fea506061e19„§cell_idÙ$b286fb97-61ed-45d8-9d4c-fea506061e19°running_disabledÂ¤code­using PlutoUI«code_foldedÃÙ$33f7db73-042b-4b3c-b3f9-e54502a977d5„§cell_idÙ$33f7db73-042b-4b3c-b3f9-e54502a977d5°running_disabledÂ¤codeÚmd"""
+
+## How are standards created?
+
+### There is a standard for that!
+
+### SDOs
+
+Standards are created by __Standards Developing Organizations (SDO)__. SDOs can be
+
+
+- Business groups.
+  - Example _USB-DF:_ This SDO consists of businesses that develop USB cables
+- Professional organizations.
+  - Example _Institute of Electrical and Electroncis Engineers (IEEE):_ Professional organization developing standards for computing, communications, etc.
+- Government agencies
+  - Example [_Australian Digital Health Agency_](https://www.digitalhealth.gov.au/): Creates standards for Australian-specific needs in the digital health domain.
+    - [HL7-FHIR Australia ](https://hl7.com.au/)
+
+
+
+### National Standards Organizations (NSO)s
+
+NSOs accredit SDOs within sovereign countries and thus define the rules for standards development. The NSOs are also the representatives for each country in the international standards organizations, such as ISO.
+
+- [Standards Australia](https://www.standards.org.au/)
+- [THE AMERICAN NATIONAL STANDARDS INSTITUTE (ANSI)](https://www.ansi.org/)
+
+### International standards organizations
+
+Organizes, publishes.
+
+![standards_bodies.png](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/standards_bodies.png?raw=true)Â Â 
+
+## Important Medical Standards
+
+- SNOMED-CT
+
+>Today SNOMED International remains a division of CAP and is an American National Standards Institute (ANSI) accredited Standards Developing Organization (SDO), responsible for the continued development and maintenance of the SNOMED Clinical Terms (SNOMED CT) coding standard. ([SNOMED](https://digital.ahrq.gov/key-topics/snomed-ct))
+
+- HL7 (including HL7-FHIR)
+
+>Founded in 1987, Health Level Seven International (HL7) is a not-for-profit, ANSI-accredited standards developing organization dedicated to providing a comprehensive framework and related standards for the exchange, integration, sharing and retrieval of electronic health information that supports clinical practice and the management, delivery and evaluation of health services." ([About HL7 International](https://www.hl7.org/))
+
+- LOINC
+
+>LOINC, which stands for Logical Observation Identifiers Names and Codes, was initiated in 1994 by Clem McDonald, then an investigator at Regenstrief Institute, a non-profit medical research organization associated with Indiana University. Indianapolis-based Regenstrief organized the LOINC Committee to develop a common terminology for laboratory and clinical observations because there was a growing trend to send clinical data electronically from laboratories and other data producers to hospitals, physician's offices, and payers who use the data for clinical care and management purposes.
+>
+>At the timeâ€”and still todayâ€”most laboratories and clinical services use HL7 to send their results electronically from their reporting systems to their care systems. However, the tests in these messages are identified by means of their internal, idiosyncratic code values. As a result, receiving care system cannot fully "understand" and properly file the results they receive unless they either adopt the producer's test codes (which is impossible if they receive results from multiple sources), or invest in the work to map each result producer's code system to their internal code system. ([About LOINC](https://loinc.org/about/))
+
+
+"""«code_foldedÃÙ$c1a1a8f5-2a75-4eed-b4f4-97bbad2304a0„§cell_idÙ$c1a1a8f5-2a75-4eed-b4f4-97bbad2304a0°running_disabledÂ¤codeÚzbegin
+	solar_year = 365.2422;
+	lunar_month = 29.5306;
+md"""## Standards Example: Time
+
+Time is a very tricky subject.
+
+- The solar year is approximately $(solar_year) days
+- The lunar month is approximately $(lunar_month) days
+
+Divide the solar year by the lunar month and you get
+	$(solar_year/lunar_month)
+	
+Which is likely where we get our 12 month year, with lots of complicated rules to try to account for the 0.368262073916549 fractional days.
+	
+Our 12 month year is likely also the reason we have a 24 hour day, a division created by ancient Babylonian astronomers but not used in common life.
+	
+### Technology Limits Needs for Standards
+	
+The standard ancient technology for measuring time was the sundial. The sundial did not lead to our concept of an hour, since the shadow moves slower at mid-day than it does in the evening or the morning. Further was there a social need for small, uniform divisions of time? It is only in the move from an agrarian to an industrial society where shift work needed to be coordinated that a uniform hour started to be defined. The technology of mechanical clocks which started appearing around 1400 CE provided the technological basis for this. Minutes on mechanical clocks came around 200 years later. Seconds arrived on mechanical clocks at nearly the same time.
+	
+The classical second was the day dvided by 60x60 (there is that 60 again!). In the 1940s the second was defined as "1/86400" of a mean solar day." ([Wikipedia](https://en.wikipedia.org/wiki/Second#History_of_definition)) 
+	
+## Trains and Standards
+
+
+* Efficiently laying railroads across North America
+	+ standardized railroad gauge
+	+ Unload cargo from one train running on gauge X
+	+ Load cargo onto new train running on gauge Y
+* Coordinate train schedules: time (speed of time travel)
+	+ coordinate time zones
+	+ Before trains, travel was too slow to be concerned about differences in times
+"""
+end«code_foldedÃ«notebook_idÙ$011c70e4-15d0-11ec-30a3-69eb334b1654«in_temp_dirÂ
