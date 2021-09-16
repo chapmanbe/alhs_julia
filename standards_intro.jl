@@ -264,7 +264,7 @@ Organizes, publishes.
 
 # ╔═╡ 80a39d08-2a1d-428c-bfc4-b505e7050800
 md"""
-## Health Standards
+# Health Standards
 
 Digital health initiatives have generally fallen into two categories: 
 
@@ -295,11 +295,27 @@ These all lead to __ambiguity__, which is not conducive to a "optimum degree of 
 
 
 
-### Standards Solution
+## Standards Solution
 
-Most of the standards that we will examine here are [ontologies](https://en.wikipedia.org/wiki/Ontology_(information_science)). Ontologies model the concepts of a domain using a heirarchy of concepts. That is, concepts have "is a" and "has a" relationships. We will illustrate this later.
+Most of the standards that we will examine here are [ontologies](https://en.wikipedia.org/wiki/Ontology_(information_science)). Ontologies model the concepts of a domain using a heirarchy of concepts. That is, concepts have "is a" and "has a" relationships. As an illustration of this, the figure below shows a standard (Uber ontology) representation of the right kidney.
 
-The foundational idea is referred to as "Concept Based Representation" (CBR).
+![dimmed kidney](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/uber_kidney_dimmed.png?raw=true)
+
+We can see that the _right kidney_ is a kind of _kidney_ which is a kind of _cavitated compound organ_ all the way up to an _entity_. In this figure I've dimmed some of the nodes in the representation so that only a single pathway is shown. The next figure shows the complete representation.
+
+![uber full kidney](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/uber_kidney.png?raw=true)
+
+Here you can see that a kidney can be viewed in a variety of ways:
+
+1. It is a an organ
+1. It is an element of the abdomen
+1. It is a lateral anatomical structure.
+
+This is an example of a poly-heirarchy, which we will touch on again below.
+
+### Concept-Base Representation
+
+The foundational idea for standards-based solutions is referred to as "Concept Based Representation" (CBR).
 
 ![Concept based representation](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/concept_based_representation.png?raw=true)
 
@@ -367,22 +383,36 @@ The figure is an illustration of how ontologies can help with data analysis. We 
 
 ![ACE inhibitors SNOMED](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/snomed_ace_inhibitors.png?raw=true)
 
- measurements.
-- [Australian Medicines Terminology]()
-   - An example case
-   - Dose, number, and packaging specific.
+
+### Australian Resources
+
+Because standards are intended for a specific context, Australia has its own set of health standards.
+
+#### SNOMED-CT-AU
+
+Some of these standards are expansion of existing international standards. Australia has its own modifications of SNOMED-CT which can be explored using CSIRO's [Shrimp Browser](https://ontoserver.csiro.au/shrimp).
+
+#### Australian Medicine Terminology
+
+There is also the Australian Medicine Terminology (AMT), something akin to RxNORM that we explored above using Bioportal. The Australian Medicine Terminology is also accessible via Shrimp, however, it is a little hard to find. Below shows the AMT heirarchy of lisinopril 10 mg.
+
+![Shrimp lisinopril 10 mg](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/amt_lisinopril_heirarchy.png?raw=true).
+
+
+The next figure shows the details of how a particular lisinopril 10 mg concept is represented in ATM
 
 ![lisinopril AU](https://github.com/chapmanbe/raw-stuff/blob/main/Standards/lisinopril_aumed1.png?raw=true)
 
-#### Why are there so many standards?
+#### Prescription Benefit Scheme
+
+
+
+## Why are there so many standards?
 
 Recall "Standards are like toothbrushes, everyone agrees that they’re a good idea but nobody wants to use anyone else’s." 
 
 But also standards are developed for a particular context and are abstractions for that context. Recalling Picasso's bulls, the _essence_ of lisinopril differs, depending on the context.
 
-### Australian Resources
-
-You can browse the Australian version of SNOMED-CT as well as the Australian Medicine Terminology and other resources as CSIRO's [Shrimp Browser](https://ontoserver.csiro.au/shrimp).
 
 
 
