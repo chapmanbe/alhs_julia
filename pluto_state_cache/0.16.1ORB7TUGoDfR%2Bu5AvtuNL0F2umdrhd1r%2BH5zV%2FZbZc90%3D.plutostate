@@ -51,7 +51,7 @@
 <li><p>Free text vs coded entry</p>
 </li>
 </ul>
-</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØPX2É¬rootassigneeÀ§cell_idÙ$3fe308a6-1490-11ec-1a5a-65f6e8e70959¹depends_on_disabled_cellsÂ§runtimeÍªP§erroredÂ±cell_dependenciesÙ$3fe308a6-1490-11ec-1a5a-65f6e8e70959„´precedence_heuristic§cell_idÙ$3fe308a6-1490-11ec-1a5a-65f6e8e70959´downstream_cells_map€²upstream_cells_map‚§@md_str¨getindex´cell_execution_order‘Ù$3fe308a6-1490-11ec-1a5a-65f6e8e70959©shortpath³standards_health.jl®process_status¨starting¤pathÙ;/home/runner/work/alhs_julia/alhs_julia/standards_health.jlªcell_order‘Ù$3fe308a6-1490-11ec-1a5a-65f6e8e70959¥nbpkg‡²installed_versions€°terminal_outputs€§enabledÃ·restart_recommended_msgÀ´restart_required_msgÀ­busy_packages¬instantiatedÃ«cell_inputsÙ$3fe308a6-1490-11ec-1a5a-65f6e8e70959„§cell_idÙ$3fe308a6-1490-11ec-1a5a-65f6e8e70959°running_disabledÂ¤codeÚ
+</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØUK]ÓKË¬rootassigneeÀ§cell_idÙ$3fe308a6-1490-11ec-1a5a-65f6e8e70959¹depends_on_disabled_cellsÂ§runtimeÍ©&§erroredÂ±cell_dependenciesÙ$3fe308a6-1490-11ec-1a5a-65f6e8e70959„´precedence_heuristic§cell_idÙ$3fe308a6-1490-11ec-1a5a-65f6e8e70959´downstream_cells_map€²upstream_cells_map‚§@md_str¨getindex´cell_execution_order‘Ù$3fe308a6-1490-11ec-1a5a-65f6e8e70959©shortpath³standards_health.jl®process_status¨starting¤pathÙ;/home/runner/work/alhs_julia/alhs_julia/standards_health.jlªcell_order‘Ù$3fe308a6-1490-11ec-1a5a-65f6e8e70959¥nbpkg‡²installed_versions€°terminal_outputs€§enabledÃ·restart_recommended_msgÀ´restart_required_msgÀ­busy_packages¬instantiatedÃ«cell_inputsÙ$3fe308a6-1490-11ec-1a5a-65f6e8e70959„§cell_idÙ$3fe308a6-1490-11ec-1a5a-65f6e8e70959°running_disabledÂ¤codeÚ
 ×md"""
 # Health Standards Relevant to this Project
 
@@ -101,4 +101,4 @@ There are a variety of drug standards relevant to this project.
    - redunancy/data inconsistency/data entry errors
 - URN
 - Free text vs coded entry
-"""«code_foldedÂ«notebook_idÙ$0ec714d8-15d0-11ec-25bd-691e48fde70a«in_temp_dirÂ
+"""«code_foldedÂ«notebook_idÙ$a58630f6-219d-11ec-0319-655260c63498«in_temp_dirÂ
