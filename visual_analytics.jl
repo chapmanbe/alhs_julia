@@ -23,7 +23,9 @@ For this project we will be limited to information visualization.
 
 ### Benefits and Challenges of Data Visualization
 
-Data visualization benefits from the human brain's richly developed pattern recognition system. Data visualization is challenged by 
+Data visualization benefits from the human brain's richly developed pattern recognition system. Data visualization is challenged by the sheer size of modern data sets, the two-dimensional and relatively small computer screen.
+
+In order to effectively leverage the human visual system, it is important that visualizations leverage the inherent strengths of our system and work around our perceptual weaknesses. One area that many visualization packages have done poorly in this regards is with default color schemes. For many years the default color map  (colors selected to display different values) was the so-called "rainbow" color map, despite decades of evidence that it was not __perceptually uniform.__ For more information about color, please read this article: ["Color in a Perceptual Uniform Way"](https://medium.com/nightingale/color-in-a-perceptual-uniform-way-1eebd4bf2692).
 
 
 ## 5 Principles for Visualization
@@ -74,5 +76,5 @@ html"""
 """
 
 # ╔═╡ Cell order:
-# ╟─8024e766-21b4-11ec-1f3e-5b4a2851886b
+# ╠═8024e766-21b4-11ec-1f3e-5b4a2851886b
 # ╟─96218539-2747-44d0-b854-c9e197acc047
