@@ -211,12 +211,6 @@ On the positive side, coded data entry allows for checking for data integrity at
 However, coded data entry is more tedious than simply typing free text and so a data collection strategy needs to balance ease of use with accuracy and completeness.
 """
 
-# ╔═╡ 53fbf636-e310-4241-a455-fb109e262c9a
-md"""
-[WHO ATC/DDD index 2021 Coding](https://www.whocc.no/atc_ddd_index/)
-"""
-
 # ╔═╡ Cell order:
 # ╟─54640fbe-86ce-42bf-89cd-6085fa2052cb
 # ╠═568ad495-ac20-40e3-9abb-220e5a0e1c78
-# ╠═53fbf636-e310-4241-a455-fb109e262c9a
