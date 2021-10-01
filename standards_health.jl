@@ -4,7 +4,7 @@
 using Markdown
 using InteractiveUtils
 
-# ╔═╡ 3fe308a6-1490-11ec-1a5a-65f6e8e70959
+# ╔═╡ 1389c991-523c-46ee-8d54-7c24f2a8ab8b
 md"""
 # Health Standards Relevant to this Project
 
@@ -26,7 +26,24 @@ In dominant standard for coding lab tests and observations is [LOINC](https://bi
 
 In Australia prescription drugs available on the [Pharmaceutical Benefit Scheme (PBS)](https://www.pbs.gov.au/info/general/about-this-site) are coded using the WHO [Anatomical Therapeutic Chemical (ATC) codes combined with the Defined Daily Dose (DDD) codes](https://www.whocc.no/atc_ddd_index/). The WHO provides a searchable interface for the ATC/DDD codes. You can browse the ATC code heirarchy at [Bioportal](https://bioportal.bioontology.org/ontologies/ATC), but without the DDD codes.
 
+"""
 
+# ╔═╡ 43f379e2-133c-4ec0-a410-8432ebc670f1
+html"""
+<h3> Limitations of PBS data </h3>
+<p>Monash University epidemiologist Jenni Ilomaki provided the following limitations to PBS data:</p>
+<blockquote>
+<p>Apologies for my late reply. There are a couple of limitations in the Australian PBS data that I would like to have (in the ideal world)</p>
+<ul>
+<li> PBS claim records do not have instructions which makes it difficult to estimate the duration of prescription. In the US Medicare, and also in some Asian countries, the prescribed duration is available. In Australia, we have to estimate this based on the dispensed amount and the usual administration frequency and dose.</li>
+<li> I would like to have data which includes all dispensed medications, not only those dispensed via the PBS. There are lots of prescriptions dispensed as 'private'. Discount pharmacies give big discounts in these cases, for example, waiving the dispensing fee.</li> 
+<li>Indication for the medication would be also important, but this does not occur in any claims data that I am aware of so totally requires the 'ideal world'.</li>
+<li> Finally, it would be great to have a flag when medication is stopped. Or if a new, similar medication is dispensed, it would be great to know if the new one is a switch or an add-on. Again, I know I am dreaming....</li>
+</blockquote>
+"""
+
+# ╔═╡ bb268271-8861-4702-9a1b-ac1934b42f4c
+md"""
 ## Data Entry Methods and Other Issues
 
 Using standards for data greatly expand the usefulness of the resulting information. However, just because standards are used does not mean the standards are correct. As mentioned above with ICD codes, the purpose and manner in which codes are used  will introduce error and or bias into the resulting information.
@@ -45,4 +62,6 @@ However, coded data entry is more tedious than simply typing free text and so a 
 """
 
 # ╔═╡ Cell order:
-# ╠═3fe308a6-1490-11ec-1a5a-65f6e8e70959
+# ╠═1389c991-523c-46ee-8d54-7c24f2a8ab8b
+# ╠═43f379e2-133c-4ec0-a410-8432ebc670f1
+# ╠═bb268271-8861-4702-9a1b-ac1934b42f4c
