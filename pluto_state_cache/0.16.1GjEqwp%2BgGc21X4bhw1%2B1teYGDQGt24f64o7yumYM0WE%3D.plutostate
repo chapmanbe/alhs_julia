@@ -1,0 +1,59 @@
+å•bondsÄ¨cell_resultsÅŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959à¶queued¬±published_objectsÄßrunning¬¶outputÖ§body⁄<div class="markdown"><h1>Health Standards Relevant to this Project</h1>
+<h2><a href="https://www.who.int/standards/classifications/classification-of-diseases">Discharge Diagnosis Codes</a></h2>
+<blockquote>
+<p>ICD is the foundation for the identification of health trends and statistics globally, and the international standard for reporting diseases and health conditions. It is the diagnostic classification standard for all clinical and research purposes. ICD defines the universe of diseases, disorders, injuries and other related health conditions, listed in a comprehensive, hierarchical fashion.</p>
+</blockquote>
+<p>Upon discharge from a hospitalization, patients are assigned diagnostic codes by professional coders who read the discharge summary and based on the contained information assign a primary diagnosis as well as a number of associated diagnoses using ICD-10 codes.</p>
+<p>These codes have the benefit of being widely used in hospitals and thus widely available, but they suffer from variability in who generates/enters the codes and, more importantly, suffer from up coding &#40;purposelly selecting a code that reimburses at a higher rate rather than the most clinically accurate code&#41;, as the ICD codes are used to determine hospital funding in Australia &#40;and elsewhere&#41;. &#40;See, for example, <a href="https://www2.health.vic.gov.au/hospitals-and-health-services/funding-performance-accountability/activity-based-funding/casemix-funding">Victoria case-mix funding</a>.&#41; Conversely, since the codes are not used for GP funding in Australia, they are not widely available from GP clinics.</p>
+<h2>Lab Tests</h2>
+<p>In dominant standard for coding lab tests and observations is <a href="https://bioportal.bioontology.org/ontologies/LOINC">LOINC</a>.</p>
+<h2>Prescriptions</h2>
+<p>In Australia prescription drugs available on the <a href="https://www.pbs.gov.au/info/general/about-this-site">Pharmaceutical Benefit Scheme &#40;PBS&#41;</a> are coded using the WHO <a href="https://www.whocc.no/atc_ddd_index/">Anatomical Therapeutic Chemical &#40;ATC&#41; codes combined with the Defined Daily Dose &#40;DDD&#41; codes</a>. The WHO provides a searchable interface for the ATC/DDD codes. You can browse the ATC code heirarchy at <a href="https://bioportal.bioontology.org/ontologies/ATC">Bioportal</a>, but without the DDD codes.</p>
+<h2>Data Entry Methods and Other Issues</h2>
+<p>Using standards for data greatly expand the usefulness of the resulting information. However, just because standards are used does not mean the standards are correct. As mentioned above with ICD codes, the purpose and manner in which codes are used  will introduce error and or bias into the resulting information.</p>
+<p>Further, codes are still liable to data entry errors. Such as selecting the wrong entry from a drop down menu or relying on default values. Default values were the &quot;culprit&quot; in a recent error in estimating Indigenous vaccination rates in Victoria: <a href="https://www.abc.net.au/news/2021-09-14/indigenous-vaccination-rates-in-victoria-dashed-software-error/100459000">Indigenous vaccination rates in Victoria revised downwards after software error detected</a>.</p>
+<p>A GP participating in this course shared the following examples of coded data entry errors:</p>
+<blockquote>
+<p>One pathology company labelling both fasting and random glucose pathology tests results with the same code: 14749-6.</p>
+<p>The other example is a large general practice data set which included an ATC code for a vaccine that had been applied to other medications at random. Relying on the codes would have resulted in a underestimation of the prescription of cardiovascular medications in general practice.</p>
+</blockquote>
+<p>On the positive side, coded data entry allows for checking for data integrity at the point of data entry, for example range checking or format checking.</p>
+<p>However, coded data entry is more tedious than simply typing free text and so a data collection strategy needs to balance ease of use with accuracy and completeness.</p>
+</div>∞persist_js_state¬§mime©text/html≤last_run_timestampÀAÿUôÃªz1¨rootassignee¿ßcell_idŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959πdepends_on_disabled_cells¬ßruntimeÕXHßerrored¬±cell_dependenciesÅŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959Ñ¥precedence_heuristicßcell_idŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959¥downstream_cells_mapÄ≤upstream_cells_mapÇß@md_strê®getindexê¥cell_execution_orderëŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959©shortpath≥standards_health.jlÆprocess_status®starting§pathŸ;/home/runner/work/alhs_julia/alhs_julia/standards_health.jl™cell_orderëŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959•nbpkgá≤installed_versionsÄ∞terminal_outputsÄßenabled√∑restart_recommended_msg¿¥restart_required_msg¿≠busy_packagesê¨instantiated√´cell_inputsÅŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959Ñßcell_idŸ$3fe308a6-1490-11ec-1a5a-65f6e8e70959∞running_disabled¬§code⁄÷md"""
+# Health Standards Relevant to this Project
+
+## [Discharge Diagnosis Codes](https://www.who.int/standards/classifications/classification-of-diseases)
+
+>ICD is the foundation for the identification of health trends and statistics globally, and the international standard for reporting diseases and health conditions. It is the diagnostic classification standard for all clinical and research purposes. ICD defines the universe of diseases, disorders, injuries and other related health conditions, listed in a comprehensive, hierarchical fashion.
+
+Upon discharge from a hospitalization, patients are assigned diagnostic codes by professional coders who read the discharge summary and based on the contained information assign a primary diagnosis as well as a number of associated diagnoses using ICD-10 codes.
+
+These codes have the benefit of being widely used in hospitals and thus widely available, but they suffer from variability in who generates/enters the codes and, more importantly, suffer from up coding (purposelly selecting a code that reimburses at a higher rate rather than the most clinically accurate code), as the ICD codes are used to determine hospital funding in Australia (and elsewhere). (See, for example, [Victoria case-mix funding](https://www2.health.vic.gov.au/hospitals-and-health-services/funding-performance-accountability/activity-based-funding/casemix-funding).) Conversely, since the codes are not used for GP funding in Australia, they are not widely available from GP clinics.
+
+## Lab Tests
+
+In dominant standard for coding lab tests and observations is [LOINC](https://bioportal.bioontology.org/ontologies/LOINC).
+
+
+
+## Prescriptions
+
+In Australia prescription drugs available on the [Pharmaceutical Benefit Scheme (PBS)](https://www.pbs.gov.au/info/general/about-this-site) are coded using the WHO [Anatomical Therapeutic Chemical (ATC) codes combined with the Defined Daily Dose (DDD) codes](https://www.whocc.no/atc_ddd_index/). The WHO provides a searchable interface for the ATC/DDD codes. You can browse the ATC code heirarchy at [Bioportal](https://bioportal.bioontology.org/ontologies/ATC), but without the DDD codes.
+
+
+## Data Entry Methods and Other Issues
+
+Using standards for data greatly expand the usefulness of the resulting information. However, just because standards are used does not mean the standards are correct. As mentioned above with ICD codes, the purpose and manner in which codes are used  will introduce error and or bias into the resulting information.
+
+Further, codes are still liable to data entry errors. Such as selecting the wrong entry from a drop down menu or relying on default values. Default values were the "culprit" in a recent error in estimating Indigenous vaccination rates in Victoria: [Indigenous vaccination rates in Victoria revised downwards after software error detected](https://www.abc.net.au/news/2021-09-14/indigenous-vaccination-rates-in-victoria-dashed-software-error/100459000).
+
+A GP participating in this course shared the following examples of coded data entry errors:
+
+>One pathology company labelling both fasting and random glucose pathology tests results with the same code: 14749-6.
+>
+>The other example is a large general practice data set which included an ATC code for a vaccine that had been applied to other medications at random. Relying on the codes would have resulted in a underestimation of the prescription of cardiovascular medications in general practice.
+
+On the positive side, coded data entry allows for checking for data integrity at the point of data entry, for example range checking or format checking.
+
+However, coded data entry is more tedious than simply typing free text and so a data collection strategy needs to balance ease of use with accuracy and completeness.
+"""´code_folded¬´notebook_idŸ$a22f1542-2258-11ec-1600-c97ca82df9c4´in_temp_dir¬
