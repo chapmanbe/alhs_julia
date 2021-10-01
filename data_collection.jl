@@ -169,7 +169,18 @@ md"""
 
 ## Problems with structured entry
 
-## Drop down menus (and other prepopulated selection forms) for data entry
+Using standards for data greatly expand the usefulness of the resulting information. However, just because standards are used does not mean the standards are correct. As mentioned earlier with ICD codes, the purpose and manner in which codes are used  will introduce error and or bias into the resulting information.
+
+Further, codes are still liable to data entry errors. 
+
+Jo-Anne Manski-Nankervis, a GP participating in this course, shared the following examples of coded data entry errors:
+
+>One pathology company labelling both fasting and random glucose pathology tests results with the same code: 14749-6.
+>
+>The other example is a large general practice data set which included an ATC code for a vaccine that had been applied to other medications at random. Relying on the codes would have resulted in a underestimation of the prescription of cardiovascular medications in general practice.
+
+
+### Drop down menus (and other prepopulated selection forms) for data entry
 
 
 Consider this story that ran on ABC News 14 September 2021:
@@ -183,7 +194,10 @@ Other problems with drop downs include:
 - Simply selecting the first element
 - Proximity errors where an adjacent menu item is selected instead of the intended/correct item.
 
-## How can structured entry help ensure data quality?
+### How can structured entry help ensure data quality?
+
+On the positive side, coded data entry allows for checking for data integrity at the point of data entry.
+
 
 - Data validation:
    - Data entry can be designed such that range checking is enforced. For example, weight must be a positive quantity or blood pressure be within physiologically possible values, with conscious overrides possible
@@ -194,9 +208,15 @@ Other problems with drop downs include:
 - Patient-provided data
    - redunancy/data inconsistency/data entry errors
 
+However, coded data entry is more tedious than simply typing free text and so a data collection strategy needs to balance ease of use with accuracy and completeness.
+"""
 
+# ╔═╡ 53fbf636-e310-4241-a455-fb109e262c9a
+md"""
+[WHO ATC/DDD index 2021 Coding](https://www.whocc.no/atc_ddd_index/)
 """
 
 # ╔═╡ Cell order:
 # ╟─54640fbe-86ce-42bf-89cd-6085fa2052cb
-# ╟─568ad495-ac20-40e3-9abb-220e5a0e1c78
+# ╠═568ad495-ac20-40e3-9abb-220e5a0e1c78
+# ╠═53fbf636-e310-4241-a455-fb109e262c9a
