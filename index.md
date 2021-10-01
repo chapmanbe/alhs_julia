@@ -12,5 +12,5 @@
 
 ### Week 3
 
-- [Information Visualization](visual_analytics.htnl)
+- [Information Visualization](visual_analytics.html)
 - [Boolean Logic and Sedts]()
