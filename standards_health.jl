@@ -42,26 +42,6 @@ html"""
 </blockquote>
 """
 
-# ╔═╡ bb268271-8861-4702-9a1b-ac1934b42f4c
-md"""
-## Data Entry Methods and Other Issues
-
-Using standards for data greatly expand the usefulness of the resulting information. However, just because standards are used does not mean the standards are correct. As mentioned above with ICD codes, the purpose and manner in which codes are used  will introduce error and or bias into the resulting information.
-
-Further, codes are still liable to data entry errors. Such as selecting the wrong entry from a drop down menu or relying on default values. Default values were the "culprit" in a recent error in estimating Indigenous vaccination rates in Victoria: [Indigenous vaccination rates in Victoria revised downwards after software error detected](https://www.abc.net.au/news/2021-09-14/indigenous-vaccination-rates-in-victoria-dashed-software-error/100459000).
-
-A GP participating in this course shared the following examples of coded data entry errors:
-
->One pathology company labelling both fasting and random glucose pathology tests results with the same code: 14749-6.
->
->The other example is a large general practice data set which included an ATC code for a vaccine that had been applied to other medications at random. Relying on the codes would have resulted in a underestimation of the prescription of cardiovascular medications in general practice.
-
-On the positive side, coded data entry allows for checking for data integrity at the point of data entry, for example range checking or format checking.
-
-However, coded data entry is more tedious than simply typing free text and so a data collection strategy needs to balance ease of use with accuracy and completeness.
-"""
-
 # ╔═╡ Cell order:
 # ╠═1389c991-523c-46ee-8d54-7c24f2a8ab8b
 # ╠═43f379e2-133c-4ec0-a410-8432ebc670f1
-# ╠═bb268271-8861-4702-9a1b-ac1934b42f4c
