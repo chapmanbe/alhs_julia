@@ -204,9 +204,7 @@ On the positive side, coded data entry allows for checking for data integrity at
    - Format checking:
       - Ensure that numbers are numeric
       - Phone numbers, email, etc. are in appropriate format
-- data pulls vs manual entry (out of network data?)
-- Patient-provided data
-   - redunancy/data inconsistency/data entry errors
+
 
 However, coded data entry is more tedious than simply typing free text and so a data collection strategy needs to balance ease of use with accuracy and completeness.
 """
