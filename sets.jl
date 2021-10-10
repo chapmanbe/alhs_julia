@@ -21,7 +21,7 @@ end
 # ╔═╡ 66ee80df-26f5-4d6b-8d2b-deba85ef5a2e
 md"""
 
-# Tools for Grouping Patients
+# Selecting and Filtering Patients Based on Data Values
 
 In this notebook we will be exploring tools we will be using during the next two weeks to split patients into different groups based on properties that the patients do or do not share. We will start with the conceptual basis for this using __sets__. We will then look at how we can achieve these sets using __Boolean logic__.
 
@@ -105,7 +105,7 @@ Further, the conditions introduce two of the key words and the corresponding set
 
 In order to construct our sets we need one last word that is 
 
-__NOT__
+__NOT__ (frequently denoted with the symbol __!__ or __$\neg$__)
 
 To help understand these concepts we will use [Venn diagrams](https://en.wikipedia.org/wiki/Venn_diagram). (Venn diagrams have limited utility for more then three sets.)
 """
@@ -125,8 +125,8 @@ md"""
 
 #### Example
 
-- Let set __A__ be the set of all patients who are Female
-- Let set __B__ be the set of all patients with a BMI > 30.
+- Let set __F__ be the set of all patients who are Female
+- Let set __O__ be the set of all patients with a BMI > 30.
 
 Consider the question 
 
@@ -134,22 +134,22 @@ Consider the question
 
 We can rewrite this as
 
-- "Who are the patients who are female (members of set A) __AND__ have a BMI greater than 30 (members of set B)?"
+- "Who are the patients who are female (members of set F) __AND__ have a BMI greater than 30 (members of set O)?"
 
 This would be written mathematically as
 
-- $\bf{A} \cap \bf{B}?$
+- $\bf{F} \cap \bf{O}?$
 
-and represented in the purple region in the Venn diagram below.
+and represented in the yellow region in the Venn diagram below.
 
-![Intersection of two sets](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Intersection_of_sets_A_and_B.svg/371px-Intersection_of_sets_A_and_B.svg.png)
+![Intersection of two sets](https://github.com/chapmanbe/raw-stuff/blob/main/EulerVenn/venn_intersect_fo.png?raw=true)
 
 ### Union (OR) of Two Sets
 
 #### Example
 
-- Let set __A__ be the set of all patients who have [disorder of kidney due to diabetes mellitus (nephropathy)](http://purl.bioontology.org/ontology/SNOMEDCT/127013003).
-- Let set __B__ be the set of all patients with a nephropathy.
+- Let set __N__ be the set of all patients who have [disorder of kidney due to diabetes mellitus (nephropathy)](http://purl.bioontology.org/ontology/SNOMEDCT/127013003).
+- Let set __R__ be the set of all patients with a retinopathy.
 
 Consider the question 
 
@@ -157,11 +157,30 @@ Consider the question
 
 This would be written mathematically as
 
-- $\bf{A} \cup \bf{B}?$
+- $\bf{N} \cup \bf{R}?$
 
-and represented in the purple region in the Venn diagram below.
+and represented in the green region in the Venn diagram below.
 
-![Union of two sets](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Venn_diagram_for_A_union_B.svg/433px-Venn_diagram_for_A_union_B.svg.png)
+![Union of two sets](https://github.com/chapmanbe/raw-stuff/blob/main/EulerVenn/venn_union_nr.png?raw=true)
+
+#### Example
+
+- Let set __F__ be the set of all patients who are Female
+- Let set __O__ be the set of all patients with a BMI > 30.
+
+Consider the question
+
+- "Who are the female patients who are not obese?"
+
+This could be rewritten as
+
+- "Who are the patients who are female __AND NOT__ obese?"
+
+This can be written mathematically as
+
+- $\bf{F} \cap \neg \bf{O}?$
+
+![Difference of two sets](https://github.com/chapmanbe/raw-stuff/blob/main/EulerVenn/venn_diff_fo.png?raw=true)
 """
 
 # ╔═╡ 95d7109f-314d-4851-ac59-4bf059626d24
@@ -195,50 +214,58 @@ For illustrative purposes I extracted some of the data that might be similar to 
 
 - __Diagnoses:__ Diagnoses were determined using the ICD9 codes assigned to the patient at discharge.
   - Does the patient have a type I diabetes diagnosis?
-    - I rephrased this using SQL as: 
-```SQL
-code LIKE '250._1' OR code LIKE '250._3'```
-
   - Does the patient have a type II diabetes diagnosis?
-    - I rephrased this using SQL as
-```sql
-code LIKE '250.%' AND NOT (code LIKE '250._3' OR code LIKE '250._1')
-```
   - Number of non-diabetes diagnoses
-    - I rephrased this using SQL as
-```sql
-WHERE code NOT LIKE '250%'
-```
-- __Lab values:__ Lab values were coded with LOINC, kind of. Actually, each lab order had a unique
-- A1C Values: The [4548-4](https://loinc.org/4548-4/)
-- Glucose Urine (50266, 50641) 2350-7
-- Glucose Blood 2339-0 2345-7
+- A1C Values
+- Glucose Blood 
 - marital_status
 - ethnicty
 - payor
 - religion
 - admission
 - sex
-- age
+- age at death
 - hospitaldeath
 - DaysInHospital
+- height
+- weight
 - bmi
 
 """
 
-# ╔═╡ 59721262-6326-4f4f-8e8f-a687c6a5707c
+# ╔═╡ 646ceac0-b72c-4b87-a3a1-0888d9bd4a83
 md"""
 ### Exercise:
+
+In this and the following examples the sets are represented using Euler-Venn diagrams, which try to represent not just the intersection of sets but the relative sizes of the sets by the areas of the circles.
 
 Given the two set _TypeI_ and _TypeII_, what combinations of __AND__, __OR__, and or __NOT__ would yield the set represented by the crosshatched area?
 
 ![all diabetics](https://github.com/chapmanbe/raw-stuff/blob/main/EulerVenn/Alldiabetics.png?raw=true)
+"""
+
+# ╔═╡ a3ed9688-4459-4270-856d-bfb9bcd9a562
+	
+HTML("<details><summary><strong>My Answer</strong></summary><p>TypeI <b>OR</b> Type II</p></details>")
+
+
+# ╔═╡ 9ec579ae-059a-46e3-b73c-089271a4b83f
+md"""
 
 ### Exercise:
 
 Given the two set _TypeI_ and _TypeII_, what combinations of __AND__, __OR__, and or __NOT__ would yield the set represented by the crosshatched area?
 
 ![all diabetics](https://github.com/chapmanbe/raw-stuff/blob/main/EulerVenn/DiabeticAndObese.png?raw=true)
+"""
+
+# ╔═╡ 4ed2f1f8-1249-4679-b93b-a54684163729
+	
+HTML("<details><summary><strong>My Answers</strong></summary><p>Obese <b>AND</b> (TypeI <b>OR</b> Type II)</p></details>")
+
+
+# ╔═╡ 5aef28d5-8ffd-45f9-a547-6bb41e359bc0
+md"""
 
 ### Exercise:
 
@@ -247,11 +274,41 @@ Given the two set _TypeI_ and _TypeII_, what combinations of __AND__, __OR__, an
 ![all diabetics](https://github.com/chapmanbe/raw-stuff/blob/main/EulerVenn/Diedobesediabetic.png?raw=true)
 """
 
+# ╔═╡ 392c63d4-75aa-4df1-b0fc-40702c8745b8
+	
+HTML("<details><summary><strong>My Answers</strong></summary><p>Obese <b>AND</b> Type II <b>AND</b> DiedAtHospital</p></details>")
+
+# ╔═╡ 47c88a48-5392-4b2f-abe6-8593657587bf
+md"""## Selecting based on Numeric Values
+
+All of our examples so far with the MIMIC data set have been asking questions of categorical data (e.g. sex, died at the hospital). But as we showed with the numbers earlier we can still form YES/NO questions with numeric values. Here is an example.
+
+#### Example
+
+A1C values below 6 (LowA1C) or above 8 (HighA1c) could be viewed as problematic. We can identify type 2 diabetic patients with problematic A1c values as follows:
+
+- "What patients have TypeII diabetes __AND__ have A1c values less than 6 __OR__ have A1c values greater than 8?"
+
+- $\text{TypeII} \cup ((\text{A1C} < 6) \cup (\text{A1C} > 8))$
+
+![a1c problems](https://github.com/chapmanbe/raw-stuff/blob/main/EulerVenn/diabetes4.png?raw=true)
+
+"""
+
 # ╔═╡ c51953b1-d267-4206-879d-63a139d12afa
 md"""
 # Additional set information
 
 If you are interested in more complete (yet still brief) review of set concepts and notation, check out [this page](https://plato.stanford.edu/entries/set-theory/basic-set-theory.html).
+"""
+
+# ╔═╡ b481618c-13b7-4fd3-bf21-e736b6902fb9
+mm = md"""
+### Answers in set notation
+
+- $\text{TypeI} \cup \text{TypeII}$
+- $\text{Obese} \cap (\text{TypeI} \cup \text{TypeII})$
+- $\text{DiedInHospital} \cap \text{Obese} \cap \text{TypeII}$
 """
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
@@ -338,9 +395,16 @@ uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
 # ╟─51c6ff9c-dc99-422d-83d4-fece9bb0068d
 # ╟─6d1b3eb5-6f2b-48c6-b8dd-73fbf6c38130
 # ╟─9917ccf9-1503-4dd9-9bd7-c9a28e9ef7a6
-# ╟─95d7109f-314d-4851-ac59-4bf059626d24
-# ╟─59721262-6326-4f4f-8e8f-a687c6a5707c
+# ╠═95d7109f-314d-4851-ac59-4bf059626d24
+# ╠═646ceac0-b72c-4b87-a3a1-0888d9bd4a83
+# ╟─a3ed9688-4459-4270-856d-bfb9bcd9a562
+# ╟─9ec579ae-059a-46e3-b73c-089271a4b83f
+# ╟─4ed2f1f8-1249-4679-b93b-a54684163729
+# ╟─5aef28d5-8ffd-45f9-a547-6bb41e359bc0
+# ╟─392c63d4-75aa-4df1-b0fc-40702c8745b8
+# ╟─47c88a48-5392-4b2f-abe6-8593657587bf
 # ╟─7224ff21-b911-417d-b42c-b2aac200d930
 # ╟─c51953b1-d267-4206-879d-63a139d12afa
+# ╟─b481618c-13b7-4fd3-bf21-e736b6902fb9
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
