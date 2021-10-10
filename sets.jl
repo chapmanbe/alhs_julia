@@ -285,11 +285,11 @@ All of our examples so far with the MIMIC data set have been asking questions of
 
 #### Example
 
-A1C values below 6 (LowA1C) or above 8 (HighA1c) could be viewed as problematic. We can identify type 2 diabetic patients with problematic A1c values as follows:
+A1c above 7 (HighA1c) is viewed as problematic and is a basis for diagnosing diabetes. The biological significance of low A1c (below 4) is not well known. However, a [recent study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4734630/), found that low A1c was associated with increased mortality. So we might consider A1c vaues < 4 or greater than 7 as problematic:
 
-- "What patients have TypeII diabetes __AND__ have A1c values less than 6 __OR__ have A1c values greater than 8?"
+- "What patients have TypeII diabetes __AND__ have A1c values less than 4.0 __OR__ have A1c values greater than 7?"
 
-- $\text{TypeII} \cup ((\text{A1C} < 6) \cup (\text{A1C} > 8))$
+- $\text{TypeII} \cup ((\text{A1C} < 4) \cup (\text{A1C} > 7))$
 
 ![a1c problems](https://github.com/chapmanbe/raw-stuff/blob/main/EulerVenn/diabetes4.png?raw=true)
 
@@ -402,7 +402,7 @@ uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
 # ╟─4ed2f1f8-1249-4679-b93b-a54684163729
 # ╟─5aef28d5-8ffd-45f9-a547-6bb41e359bc0
 # ╟─392c63d4-75aa-4df1-b0fc-40702c8745b8
-# ╟─47c88a48-5392-4b2f-abe6-8593657587bf
+# ╠═47c88a48-5392-4b2f-abe6-8593657587bf
 # ╟─7224ff21-b911-417d-b42c-b2aac200d930
 # ╟─c51953b1-d267-4206-879d-63a139d12afa
 # ╟─b481618c-13b7-4fd3-bf21-e736b6902fb9
