@@ -39,7 +39,7 @@ md"""
 
 ## The Key Idea of Sets: Commonality
 
-To define a set we first need to select the property or properties that __all__ members (elements) of the set have in __common__. The properties need to be such that we can ask quesitons about that property that result in a __YES__ (__True__) or __NO (__False__) answer.
+To define a set we first need to select the property or properties that __all__ members (elements) of the set have in __common__. The properties need to be such that we can ask quesitons about that property that result in a __YES__ (__True__) or __NO__ (__False__) answer.
 
 ### Examples using Numbers:
 
@@ -303,7 +303,7 @@ If you are interested in more complete (yet still brief) review of set concepts 
 """
 
 # ╔═╡ b481618c-13b7-4fd3-bf21-e736b6902fb9
-mm = md"""
+md"""
 ### Answers in set notation
 
 - $\text{TypeI} \cup \text{TypeII}$
@@ -395,8 +395,8 @@ uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
 # ╟─51c6ff9c-dc99-422d-83d4-fece9bb0068d
 # ╟─6d1b3eb5-6f2b-48c6-b8dd-73fbf6c38130
 # ╟─9917ccf9-1503-4dd9-9bd7-c9a28e9ef7a6
-# ╠═95d7109f-314d-4851-ac59-4bf059626d24
-# ╠═646ceac0-b72c-4b87-a3a1-0888d9bd4a83
+# ╟─95d7109f-314d-4851-ac59-4bf059626d24
+# ╟─646ceac0-b72c-4b87-a3a1-0888d9bd4a83
 # ╟─a3ed9688-4459-4270-856d-bfb9bcd9a562
 # ╟─9ec579ae-059a-46e3-b73c-089271a4b83f
 # ╟─4ed2f1f8-1249-4679-b93b-a54684163729
