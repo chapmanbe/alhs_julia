@@ -14,4 +14,4 @@
 
 - [Information Visualization](visual_analytics.html)
 - [Selecting and Filtering Patients](sets.html)
-- [Transforming data](data_transformation.jl)
+- [Transforming data](data_transformation.html)
