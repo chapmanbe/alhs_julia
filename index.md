@@ -13,4 +13,4 @@
 ### Week 3
 
 - [Information Visualization](visual_analytics.html)
-- [Boolean Logic and Sedts]()
+- [Selecting and Filtering Patients](sets.html)
