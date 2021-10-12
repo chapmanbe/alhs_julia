@@ -9,7 +9,7 @@
 - [What are standards and why do we need them?](standards_intro.html)
 - [What are health standards relevant to this project?](standards_health.html)
 - [How does the nature of our data collection impact the usefulness of the data?](data_collection.html)
-
+- [What are our Biogrid variables?"](biogrid_description.html)
 ### Week 3
 
 - [Information Visualization](visual_analytics.html)
