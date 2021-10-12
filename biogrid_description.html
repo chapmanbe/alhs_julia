@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<style>
+  table, td, th {
+      border-collapse: collapse;
+      font-family: sans-serif;
+  }
+
+  td, th {
+      border-bottom: 0;
+      padding: 4px
+  }
+
+  tr:nth-child(odd) {
+      background: #eee;
+  }
+
+  tr:nth-child(even) {
+      background: #fff;
+  }
+
+  tr.header {
+      background: navy !important;
+      color: white;
+      font-weight: bold;
+  }
+
+  tr.subheader {
+      background: lightgray !important;
+      color: black;
+  }
+
+  tr.headerLastRow {
+      border-bottom: 2px solid black;
+  }
+
+  th.rowNumber, td.rowNumber {
+      text-align: right;
+  }
+
+</style>
+<body>
+<table>
+  <tr class = "header">
+    <th style = "text-align: right;">Variable</th>
+    <th style = "text-align: right;">interpretation</th>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">pkey</td>
+    <td style = "text-align: right;">Patient's identifier</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">age</td>
+    <td style = "text-align: right;">Age as of 01/01/2018, all petients age 85+ were joined into one category '86'</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">sex</td>
+    <td style = "text-align: right;">Column gender has 2 categories: M, F</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">interpreter</td>
+    <td style = "text-align: right;">Whether the patient requires an interpreter</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">hypertension</td>
+    <td style = "text-align: right;">Whether person has a history of treatment for hypertension</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">hyperlidipeamia</td>
+    <td style = "text-align: right;">Whether person has a history of treatment for hyperlipidaemia - Yes/No</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">ischemic_heart_disease</td>
+    <td style = "text-align: right;">Whether person has a history of treatment for ischemic heart disease - Yes/No</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">cardiac_failure</td>
+    <td style = "text-align: right;">Whether person has a history of treatment for cardiac failure - Yes/No</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">neuropathy</td>
+    <td style = "text-align: right;">Whether person has a history of treatment for neuropathy - Yes/No</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">nephropathy</td>
+    <td style = "text-align: right;">Whether person has a history of treatment for nephropathy - Yes/No</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">oral_contraceptive</td>
+    <td style = "text-align: right;">On Oral Contraceptive - Yes/No</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">beta_blockers</td>
+    <td style = "text-align: right;">On Beta Blockers - Yes/No</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">ace_inhibitor</td>
+    <td style = "text-align: right;">On ACE Inhibitor - Yes/No</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">calcium_chan_block</td>
+    <td style = "text-align: right;">On Calcium Channel Blockers - Yes/No</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">corticosteroids</td>
+    <td style = "text-align: right;">On Corticosteroids - Yes/No</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">thaizide</td>
+    <td style = "text-align: right;">On Thiazide - Yes/No</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">agr2receptorblock</td>
+    <td style = "text-align: right;">On angiotensin 2 Receptor Blockers - Yes/No</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">aspirin</td>
+    <td style = "text-align: right;">On aspirin treatment - Yes/No</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">familyhistory</td>
+    <td style = "text-align: right;">Family history of diabetes</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">siblings</td>
+    <td style = "text-align: right;">Patient has siblings with diabeties</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">children</td>
+    <td style = "text-align: right;">Patient has children with diabeties</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">gestdiabetes</td>
+    <td style = "text-align: right;">Whether the person has previously been diagnosed with gestational diabetes</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">symptomaticpn</td>
+    <td style = "text-align: right;">Whether the patient has a history of symptomatic peripheral neuropathy</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">depression</td>
+    <td style = "text-align: right;">Whether the person has a history of depression</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">isletantibody</td>
+    <td style = "text-align: right;">Whether the person has had screening for Islet Antibody</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">coeliacantibody</td>
+    <td style = "text-align: right;">Whether the person has had screening for Coeliac Antibody</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">tfunction</td>
+    <td style = "text-align: right;">Whether the person has had screening for Thyroid function</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">tantibody</td>
+    <td style = "text-align: right;">Whether the person has had screening for Thyroid Antibody</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">vitaminb12</td>
+    <td style = "text-align: right;">Whether the person has had screening for Vitamin B12</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">dka_diagnosis</td>
+    <td style = "text-align: right;">Whether the person has diagnosis of diabetic ketoacidosis </td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">alcohol</td>
+    <td style = "text-align: right;">Whether the person drinks alcohol</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">smoker</td>
+    <td style = "text-align: right;">Smoking status of the person</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">years_diagnosed</td>
+    <td style = "text-align: right;">Number of years since the person has been diagnosed with diabetes type 2 as of 01/01/2018</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">sodium</td>
+    <td style = "text-align: right;">The person's measured sodium level in blood (mmol/L)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">potassium</td>
+    <td style = "text-align: right;">The person's measured potassium level in blood (mmol/L)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">chloride</td>
+    <td style = "text-align: right;">The person's measured chloride level in blood (mmol/L)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">bicarbonate</td>
+    <td style = "text-align: right;">The person's measured bicarbonate level in blood (mmol/L)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">creatinine</td>
+    <td style = "text-align: right;">The person's measured serum creatinine level in blood (mmol/L)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">urea</td>
+    <td style = "text-align: right;">The person's measured urea level in blood (mmol/L)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">haemoglobin</td>
+    <td style = "text-align: right;">The person's measured haemoglobin level (g/L)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">wcc</td>
+    <td style = "text-align: right;">The person's measured white cell count (x10^9/L)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">platelets</td>
+    <td style = "text-align: right;">The person's measured platelets count (x10^9/L)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">rcc</td>
+    <td style = "text-align: right;">The person's measured red blood cell count (x10^12/L)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">pcv</td>
+    <td style = "text-align: right;">Person's measured Packed Cell Volume</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">mcv</td>
+    <td style = "text-align: right;">Person's measured Mean Cell volume (fl)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">hba1c</td>
+    <td style = "text-align: right;">The person's measured glycosylated haemoglobin (HbA1c) level as a percentage</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">alb_crratio</td>
+    <td style = "text-align: right;">The patients albumin creatinine ratio in urine (mg/moll)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">egfr</td>
+    <td style = "text-align: right;">The patients albumin creatinine ratio in urine (mg/moll)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">weight</td>
+    <td style = "text-align: right;">Weight at booking (kg)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">weight_more_100</td>
+    <td style = "text-align: right;">Indicates whether the person's weight is higher than 100kg</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">waist</td>
+    <td style = "text-align: right;">Waist circumference (cm)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">systolic</td>
+    <td style = "text-align: right;">The person's systolic blood pressure</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">diastolic</td>
+    <td style = "text-align: right;">The person's diastolic blood pressure</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">elevated_bp</td>
+    <td style = "text-align: right;">Indicates whether the person has elevated blood pressure ( > 190/95 mmHg)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">bmi</td>
+    <td style = "text-align: right;">The patient's body mass index</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">obesity</td>
+    <td style = "text-align: right;">Flag for whether the patient is obese</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">retinopathy</td>
+    <td style = "text-align: right;">Whether the person has retinopathy (either eye)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">charcot</td>
+    <td style = "text-align: right;">Whether the person has Charcot foot (either foot)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">ulceration</td>
+    <td style = "text-align: right;">Status of whether the person has a current foot ulcer on either foot</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">stroke</td>
+    <td style = "text-align: right;">Whether the person had cerebral stroke due to vascular disease</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">ami</td>
+    <td style = "text-align: right;">Whether the person had an acute myocardial infarction</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">tia</td>
+    <td style = "text-align: right;">Whether the person has had transient ischemic attack</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">claudication</td>
+    <td style = "text-align: right;">Whether the person experienced claudication</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">cabg</td>
+    <td style = "text-align: right;">Whether the person has had a coronary artery bypass graft</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">cardiomyopathy</td>
+    <td style = "text-align: right;">Whether the person has had ischaemic cardiomyopathy/cardiac failure</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">neuropathy_ep</td>
+    <td style = "text-align: right;">Whether the person has had autonomic neuropathy</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">visits_b2018</td>
+    <td style = "text-align: right;">Number of appointments before 01/01/2018</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">method_manage_dt2</td>
+    <td style = "text-align: right;">The method is used to manage the person's diabetes</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">ind_of_nephropathy</td>
+    <td style = "text-align: right;">Whether the person has nephropathy (based on: eGFR, UACR indicators)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">cardiovascular_disease</td>
+    <td style = "text-align: right;">Whether the person has cardiovascular disease (based on: MI, ischaemic cardiomyopathy/cardiac failure, CABG)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">cerebrovascular_disease</td>
+    <td style = "text-align: right;">Whether the person has cerebrovascular disease (based on: AIT, stroke indicators)</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">lower_limb_problems</td>
+    <td style = "text-align: right;">Whether the person has lower limb problems like Charcot foot, ulceration </td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">admissions_2017</td>
+    <td style = "text-align: right;">Number of admissions to the hospital during 2017</td>
+  </tr>
+  <tr>
+    <td style = "text-align: right;">label</td>
+    <td style = "text-align: right;">Whether the person was hospitalised after 01/01/2018</td>
+  </tr>
+</table>
+</body>
+</html>
